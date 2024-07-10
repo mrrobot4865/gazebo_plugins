@@ -12,8 +12,10 @@
 
 
 // Include directives for member types
-// Member `name`
+// Member `encoding`
 #include "rosidl_runtime_c/string_functions.h"
+// Member `data`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 bool
 cam_interface__msg__Pixel__init(cam_interface__msg__Pixel * msg)
@@ -21,9 +23,18 @@ cam_interface__msg__Pixel__init(cam_interface__msg__Pixel * msg)
   if (!msg) {
     return false;
   }
-  // im_data
-  // name
-  if (!rosidl_runtime_c__String__init(&msg->name)) {
+  // timestamp
+  // height
+  // width
+  // encoding
+  if (!rosidl_runtime_c__String__init(&msg->encoding)) {
+    cam_interface__msg__Pixel__fini(msg);
+    return false;
+  }
+  // is_bigendian
+  // step
+  // data
+  if (!rosidl_runtime_c__uint8__Sequence__init(&msg->data, 0)) {
     cam_interface__msg__Pixel__fini(msg);
     return false;
   }
@@ -36,9 +47,15 @@ cam_interface__msg__Pixel__fini(cam_interface__msg__Pixel * msg)
   if (!msg) {
     return;
   }
-  // im_data
-  // name
-  rosidl_runtime_c__String__fini(&msg->name);
+  // timestamp
+  // height
+  // width
+  // encoding
+  rosidl_runtime_c__String__fini(&msg->encoding);
+  // is_bigendian
+  // step
+  // data
+  rosidl_runtime_c__uint8__Sequence__fini(&msg->data);
 }
 
 bool
@@ -47,15 +64,35 @@ cam_interface__msg__Pixel__are_equal(const cam_interface__msg__Pixel * lhs, cons
   if (!lhs || !rhs) {
     return false;
   }
-  // im_data
-  for (size_t i = 0; i < 3; ++i) {
-    if (lhs->im_data[i] != rhs->im_data[i]) {
-      return false;
-    }
+  // timestamp
+  if (lhs->timestamp != rhs->timestamp) {
+    return false;
   }
-  // name
+  // height
+  if (lhs->height != rhs->height) {
+    return false;
+  }
+  // width
+  if (lhs->width != rhs->width) {
+    return false;
+  }
+  // encoding
   if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->name), &(rhs->name)))
+      &(lhs->encoding), &(rhs->encoding)))
+  {
+    return false;
+  }
+  // is_bigendian
+  if (lhs->is_bigendian != rhs->is_bigendian) {
+    return false;
+  }
+  // step
+  if (lhs->step != rhs->step) {
+    return false;
+  }
+  // data
+  if (!rosidl_runtime_c__uint8__Sequence__are_equal(
+      &(lhs->data), &(rhs->data)))
   {
     return false;
   }
@@ -70,13 +107,25 @@ cam_interface__msg__Pixel__copy(
   if (!input || !output) {
     return false;
   }
-  // im_data
-  for (size_t i = 0; i < 3; ++i) {
-    output->im_data[i] = input->im_data[i];
-  }
-  // name
+  // timestamp
+  output->timestamp = input->timestamp;
+  // height
+  output->height = input->height;
+  // width
+  output->width = input->width;
+  // encoding
   if (!rosidl_runtime_c__String__copy(
-      &(input->name), &(output->name)))
+      &(input->encoding), &(output->encoding)))
+  {
+    return false;
+  }
+  // is_bigendian
+  output->is_bigendian = input->is_bigendian;
+  // step
+  output->step = input->step;
+  // data
+  if (!rosidl_runtime_c__uint8__Sequence__copy(
+      &(input->data), &(output->data)))
   {
     return false;
   }

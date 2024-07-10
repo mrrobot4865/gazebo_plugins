@@ -25,14 +25,56 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: im_data
+  // member: timestamp
   {
-    if (msg.im_data.size() == 0) {
-      out << "im_data: []";
+    out << "timestamp: ";
+    rosidl_generator_traits::value_to_yaml(msg.timestamp, out);
+    out << ", ";
+  }
+
+  // member: height
+  {
+    out << "height: ";
+    rosidl_generator_traits::value_to_yaml(msg.height, out);
+    out << ", ";
+  }
+
+  // member: width
+  {
+    out << "width: ";
+    rosidl_generator_traits::value_to_yaml(msg.width, out);
+    out << ", ";
+  }
+
+  // member: encoding
+  {
+    out << "encoding: ";
+    rosidl_generator_traits::value_to_yaml(msg.encoding, out);
+    out << ", ";
+  }
+
+  // member: is_bigendian
+  {
+    out << "is_bigendian: ";
+    rosidl_generator_traits::value_to_yaml(msg.is_bigendian, out);
+    out << ", ";
+  }
+
+  // member: step
+  {
+    out << "step: ";
+    rosidl_generator_traits::value_to_yaml(msg.step, out);
+    out << ", ";
+  }
+
+  // member: data
+  {
+    if (msg.data.size() == 0) {
+      out << "data: []";
     } else {
-      out << "im_data: [";
-      size_t pending_items = msg.im_data.size();
-      for (auto item : msg.im_data) {
+      out << "data: [";
+      size_t pending_items = msg.data.size();
+      for (auto item : msg.data) {
         rosidl_generator_traits::value_to_yaml(item, out);
         if (--pending_items > 0) {
           out << ", ";
@@ -40,13 +82,6 @@ inline void to_flow_style_yaml(
       }
       out << "]";
     }
-    out << ", ";
-  }
-
-  // member: name
-  {
-    out << "name: ";
-    rosidl_generator_traits::value_to_yaml(msg.name, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -55,16 +90,76 @@ inline void to_block_style_yaml(
   const Pixel & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: im_data
+  // member: timestamp
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    if (msg.im_data.size() == 0) {
-      out << "im_data: []\n";
+    out << "timestamp: ";
+    rosidl_generator_traits::value_to_yaml(msg.timestamp, out);
+    out << "\n";
+  }
+
+  // member: height
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "height: ";
+    rosidl_generator_traits::value_to_yaml(msg.height, out);
+    out << "\n";
+  }
+
+  // member: width
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "width: ";
+    rosidl_generator_traits::value_to_yaml(msg.width, out);
+    out << "\n";
+  }
+
+  // member: encoding
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "encoding: ";
+    rosidl_generator_traits::value_to_yaml(msg.encoding, out);
+    out << "\n";
+  }
+
+  // member: is_bigendian
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "is_bigendian: ";
+    rosidl_generator_traits::value_to_yaml(msg.is_bigendian, out);
+    out << "\n";
+  }
+
+  // member: step
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "step: ";
+    rosidl_generator_traits::value_to_yaml(msg.step, out);
+    out << "\n";
+  }
+
+  // member: data
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.data.size() == 0) {
+      out << "data: []\n";
     } else {
-      out << "im_data:\n";
-      for (auto item : msg.im_data) {
+      out << "data:\n";
+      for (auto item : msg.data) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }
@@ -73,16 +168,6 @@ inline void to_block_style_yaml(
         out << "\n";
       }
     }
-  }
-
-  // member: name
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "name: ";
-    rosidl_generator_traits::value_to_yaml(msg.name, out);
-    out << "\n";
   }
 }  // NOLINT(readability/fn_size)
 

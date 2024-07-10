@@ -187,4 +187,5 @@ CMakeFiles/cam_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_f
  /home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface/rosidl_generator_c/cam_interface/msg/detail/pixel__functions.h \
  /usr/include/c++/11/stdlib.h \
  /home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface/rosidl_generator_c/cam_interface/msg/rosidl_generator_c__visibility_control.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h

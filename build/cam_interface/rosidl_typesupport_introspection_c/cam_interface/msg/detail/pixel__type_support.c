@@ -13,8 +13,10 @@
 
 
 // Include directives for member types
-// Member `name`
+// Member `encoding`
 #include "rosidl_runtime_c/string_functions.h"
+// Member `data`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -35,78 +37,71 @@ void cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__Pixel_fini_f
   cam_interface__msg__Pixel__fini(message_memory);
 }
 
-size_t cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__size_function__Pixel__im_data(
+size_t cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__size_function__Pixel__data(
   const void * untyped_member)
 {
-  (void)untyped_member;
-  return 3;
+  const rosidl_runtime_c__uint8__Sequence * member =
+    (const rosidl_runtime_c__uint8__Sequence *)(untyped_member);
+  return member->size;
 }
 
-const void * cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__get_const_function__Pixel__im_data(
+const void * cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__get_const_function__Pixel__data(
   const void * untyped_member, size_t index)
 {
-  const float * member =
-    (const float *)(untyped_member);
-  return &member[index];
+  const rosidl_runtime_c__uint8__Sequence * member =
+    (const rosidl_runtime_c__uint8__Sequence *)(untyped_member);
+  return &member->data[index];
 }
 
-void * cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__get_function__Pixel__im_data(
+void * cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__get_function__Pixel__data(
   void * untyped_member, size_t index)
 {
-  float * member =
-    (float *)(untyped_member);
-  return &member[index];
+  rosidl_runtime_c__uint8__Sequence * member =
+    (rosidl_runtime_c__uint8__Sequence *)(untyped_member);
+  return &member->data[index];
 }
 
-void cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__fetch_function__Pixel__im_data(
+void cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__fetch_function__Pixel__data(
   const void * untyped_member, size_t index, void * untyped_value)
 {
-  const float * item =
-    ((const float *)
-    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__get_const_function__Pixel__im_data(untyped_member, index));
-  float * value =
-    (float *)(untyped_value);
+  const uint8_t * item =
+    ((const uint8_t *)
+    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__get_const_function__Pixel__data(untyped_member, index));
+  uint8_t * value =
+    (uint8_t *)(untyped_value);
   *value = *item;
 }
 
-void cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__assign_function__Pixel__im_data(
+void cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__assign_function__Pixel__data(
   void * untyped_member, size_t index, const void * untyped_value)
 {
-  float * item =
-    ((float *)
-    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__get_function__Pixel__im_data(untyped_member, index));
-  const float * value =
-    (const float *)(untyped_value);
+  uint8_t * item =
+    ((uint8_t *)
+    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__get_function__Pixel__data(untyped_member, index));
+  const uint8_t * value =
+    (const uint8_t *)(untyped_value);
   *item = *value;
 }
 
-static rosidl_typesupport_introspection_c__MessageMember cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__Pixel_message_member_array[2] = {
+bool cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__resize_function__Pixel__data(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__uint8__Sequence * member =
+    (rosidl_runtime_c__uint8__Sequence *)(untyped_member);
+  rosidl_runtime_c__uint8__Sequence__fini(member);
+  return rosidl_runtime_c__uint8__Sequence__init(member, size);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__Pixel_message_member_array[7] = {
   {
-    "im_data",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    true,  // is array
-    3,  // array size
-    false,  // is upper bound
-    offsetof(cam_interface__msg__Pixel, im_data),  // bytes offset in struct
-    NULL,  // default value
-    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__size_function__Pixel__im_data,  // size() function pointer
-    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__get_const_function__Pixel__im_data,  // get_const(index) function pointer
-    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__get_function__Pixel__im_data,  // get(index) function pointer
-    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__fetch_function__Pixel__im_data,  // fetch(index, &value) function pointer
-    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__assign_function__Pixel__im_data,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "name",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    "timestamp",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cam_interface__msg__Pixel, name),  // bytes offset in struct
+    offsetof(cam_interface__msg__Pixel, timestamp),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -114,13 +109,115 @@ static rosidl_typesupport_introspection_c__MessageMember cam_interface__msg__Pix
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "height",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cam_interface__msg__Pixel, height),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "width",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cam_interface__msg__Pixel, width),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "encoding",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cam_interface__msg__Pixel, encoding),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "is_bigendian",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cam_interface__msg__Pixel, is_bigendian),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "step",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cam_interface__msg__Pixel, step),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "data",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cam_interface__msg__Pixel, data),  // bytes offset in struct
+    NULL,  // default value
+    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__size_function__Pixel__data,  // size() function pointer
+    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__get_const_function__Pixel__data,  // get_const(index) function pointer
+    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__get_function__Pixel__data,  // get(index) function pointer
+    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__fetch_function__Pixel__data,  // fetch(index, &value) function pointer
+    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__assign_function__Pixel__data,  // assign(index, value) function pointer
+    cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__resize_function__Pixel__data  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__Pixel_message_members = {
   "cam_interface__msg",  // message namespace
   "Pixel",  // message name
-  2,  // number of fields
+  7,  // number of fields
   sizeof(cam_interface__msg__Pixel),
   cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__Pixel_message_member_array,  // message members
   cam_interface__msg__Pixel__rosidl_typesupport_introspection_c__Pixel_init_function,  // function to initialize message memory (memory has to be allocated)

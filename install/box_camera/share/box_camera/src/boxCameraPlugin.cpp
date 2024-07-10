@@ -7,6 +7,7 @@
 // #include <std_msgs/msg/bool.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <cam_interface/msg/pixel.hpp>
+#include <opencv2/opencv.hpp>
 #include <memory>
 
 namespace gazebo {
@@ -69,14 +70,28 @@ namespace gazebo {
     }
 
     void BoxCameraPluginPrivate::OnPower(){
-        printf("Powered");
+        printf("Plugin Powered ... \n");
 
         this->updateConnection = this->_camerasensor->ConnectUpdated(std::bind(&BoxCameraPluginPrivate::OnUpdate,this));
 
     }
 
     void BoxCameraPluginPrivate::OnUpdate(){
-        printf("Updating");
+        printf("Data Updating via Plugin ... \n");
+        const unsigned char *imageData = this->_camerasensor->ImageData();
+         if (!imageData){
+            gzerr << "Failed to get image data.\n";
+            return;
+        }
+
+        int width = this->_camerasensor->ImageWidth();
+        int height = this->_camerasensor->ImageHeight();
+        // int depth = this->_camerasensor->ImageDepth();
+
+        cv::Mat image(height, width, CV_8UC3, const_cast<unsigned char*>(imageData));
+        
+        cv::imshow("Gazebo Camera Image", image);
+        cv::waitKey(1);
     }
 
 

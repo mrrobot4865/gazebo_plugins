@@ -5,12 +5,10 @@
 
 # Import statements for member types
 
+# Member 'data'
+import array  # noqa: E402, I100
+
 import builtins  # noqa: E402, I100
-
-import math  # noqa: E402, I100
-
-# Member 'im_data'
-import numpy  # noqa: E402, I100
 
 import rosidl_parser.definition  # noqa: E402, I100
 
@@ -60,30 +58,46 @@ class Pixel(metaclass=Metaclass_Pixel):
     """Message class 'Pixel'."""
 
     __slots__ = [
-        '_im_data',
-        '_name',
+        '_timestamp',
+        '_height',
+        '_width',
+        '_encoding',
+        '_is_bigendian',
+        '_step',
+        '_data',
     ]
 
     _fields_and_field_types = {
-        'im_data': 'float[3]',
-        'name': 'string',
+        'timestamp': 'int64',
+        'height': 'uint32',
+        'width': 'uint32',
+        'encoding': 'string',
+        'is_bigendian': 'uint8',
+        'step': 'uint32',
+        'data': 'sequence<uint8>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 3),  # noqa: E501
+        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('uint8')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        if 'im_data' not in kwargs:
-            self.im_data = numpy.zeros(3, dtype=numpy.float32)
-        else:
-            self.im_data = numpy.array(kwargs.get('im_data'), dtype=numpy.float32)
-            assert self.im_data.shape == (3, )
-        self.name = kwargs.get('name', str())
+        self.timestamp = kwargs.get('timestamp', int())
+        self.height = kwargs.get('height', int())
+        self.width = kwargs.get('width', int())
+        self.encoding = kwargs.get('encoding', str())
+        self.is_bigendian = kwargs.get('is_bigendian', int())
+        self.step = kwargs.get('step', int())
+        self.data = array.array('B', kwargs.get('data', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -114,9 +128,19 @@ class Pixel(metaclass=Metaclass_Pixel):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if all(self.im_data != other.im_data):
+        if self.timestamp != other.timestamp:
             return False
-        if self.name != other.name:
+        if self.height != other.height:
+            return False
+        if self.width != other.width:
+            return False
+        if self.encoding != other.encoding:
+            return False
+        if self.is_bigendian != other.is_bigendian:
+            return False
+        if self.step != other.step:
+            return False
+        if self.data != other.data:
             return False
         return True
 
@@ -126,18 +150,104 @@ class Pixel(metaclass=Metaclass_Pixel):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def im_data(self):
-        """Message field 'im_data'."""
-        return self._im_data
+    def timestamp(self):
+        """Message field 'timestamp'."""
+        return self._timestamp
 
-    @im_data.setter
-    def im_data(self, value):
-        if isinstance(value, numpy.ndarray):
-            assert value.dtype == numpy.float32, \
-                "The 'im_data' numpy.ndarray() must have the dtype of 'numpy.float32'"
-            assert value.size == 3, \
-                "The 'im_data' numpy.ndarray() must have a size of 3"
-            self._im_data = value
+    @timestamp.setter
+    def timestamp(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'timestamp' field must be of type 'int'"
+            assert value >= -9223372036854775808 and value < 9223372036854775808, \
+                "The 'timestamp' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+        self._timestamp = value
+
+    @builtins.property
+    def height(self):
+        """Message field 'height'."""
+        return self._height
+
+    @height.setter
+    def height(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'height' field must be of type 'int'"
+            assert value >= 0 and value < 4294967296, \
+                "The 'height' field must be an unsigned integer in [0, 4294967295]"
+        self._height = value
+
+    @builtins.property
+    def width(self):
+        """Message field 'width'."""
+        return self._width
+
+    @width.setter
+    def width(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'width' field must be of type 'int'"
+            assert value >= 0 and value < 4294967296, \
+                "The 'width' field must be an unsigned integer in [0, 4294967295]"
+        self._width = value
+
+    @builtins.property
+    def encoding(self):
+        """Message field 'encoding'."""
+        return self._encoding
+
+    @encoding.setter
+    def encoding(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'encoding' field must be of type 'str'"
+        self._encoding = value
+
+    @builtins.property
+    def is_bigendian(self):
+        """Message field 'is_bigendian'."""
+        return self._is_bigendian
+
+    @is_bigendian.setter
+    def is_bigendian(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'is_bigendian' field must be of type 'int'"
+            assert value >= 0 and value < 256, \
+                "The 'is_bigendian' field must be an unsigned integer in [0, 255]"
+        self._is_bigendian = value
+
+    @builtins.property
+    def step(self):
+        """Message field 'step'."""
+        return self._step
+
+    @step.setter
+    def step(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'step' field must be of type 'int'"
+            assert value >= 0 and value < 4294967296, \
+                "The 'step' field must be an unsigned integer in [0, 4294967295]"
+        self._step = value
+
+    @builtins.property
+    def data(self):
+        """Message field 'data'."""
+        return self._data
+
+    @data.setter
+    def data(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'B', \
+                "The 'data' array.array() must have the type code of 'B'"
+            self._data = value
             return
         if __debug__:
             from collections.abc import Sequence
@@ -150,21 +260,7 @@ class Pixel(metaclass=Metaclass_Pixel):
                   isinstance(value, UserList)) and
                  not isinstance(value, str) and
                  not isinstance(value, UserString) and
-                 len(value) == 3 and
-                 all(isinstance(v, float) for v in value) and
-                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'im_data' field must be a set or sequence with length 3 and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
-        self._im_data = numpy.array(value, dtype=numpy.float32)
-
-    @builtins.property
-    def name(self):
-        """Message field 'name'."""
-        return self._name
-
-    @name.setter
-    def name(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, str), \
-                "The 'name' field must be of type 'str'"
-        self._name = value
+                 all(isinstance(v, int) for v in value) and
+                 all(val >= 0 and val < 256 for val in value)), \
+                "The 'data' field must be a set or sequence and each value of type 'int' and each unsigned integer in [0, 255]"
+        self._data = array.array('B', value)

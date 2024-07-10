@@ -1,2 +1,7 @@
-float32[3] im_data
-string name
+int64 timestamp
+uint32 height
+uint32 width
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data

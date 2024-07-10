@@ -18,14 +18,21 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'name'
+// Member 'encoding'
 #include "rosidl_runtime_c/string.h"
+// Member 'data'
+#include "rosidl_runtime_c/primitives_sequence.h"
 
 /// Struct defined in msg/Pixel in the package cam_interface.
 typedef struct cam_interface__msg__Pixel
 {
-  float im_data[3];
-  rosidl_runtime_c__String name;
+  int64_t timestamp;
+  uint32_t height;
+  uint32_t width;
+  rosidl_runtime_c__String encoding;
+  uint8_t is_bigendian;
+  uint32_t step;
+  rosidl_runtime_c__uint8__Sequence data;
 } cam_interface__msg__Pixel;
 
 // Struct for a sequence of cam_interface__msg__Pixel.

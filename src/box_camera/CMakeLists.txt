@@ -24,6 +24,9 @@ find_package(std_msgs REQUIRED)
 find_package(robot_state_publisher REQUIRED)
 find_package(xacro REQUIRED)
 find_package(cam_interface)
+find_package(OpenCV REQUIRED)
+
+include_directories(${GAZEBO_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})
 
 # Install All Directories
 install(DIRECTORY
@@ -47,10 +50,12 @@ install(DIRECTORY
 add_library(box_camera_plugin SHARED
   src/boxCameraPlugin.cpp
 )
+# target_link_libraries(box_camera_plugin ${GAZEBO_LIBRARIES} ${OpenCV_LIBRARIES})
 
 target_include_directories(box_camera_plugin PUBLIC include)
 ament_target_dependencies(box_camera_plugin rclcpp cam_interface
   "gazebo_ros"
+  OpenCV
 )
 ament_export_libraries(box_camera_plugin)
 

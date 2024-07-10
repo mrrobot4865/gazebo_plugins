@@ -1,6 +1,0 @@
-[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvirtual[m[K’ outside class declaration
-   41 |     [01;31m[Kvirtual[m[K void BoxCameraPlugin::Load(gazebo::sensors::SensorPtr _sensor, sdf::ElementPtr sdf){
-      |     [01;31m[K^~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/box_camera_plugin.dir/build.make:76: CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/box_camera_plugin.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

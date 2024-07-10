@@ -1,4 +1,0 @@
-Invoking command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera -- -j4 -l4
-Invoked command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera -- -j4 -l4
-Invoking command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera
-Invoked command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera

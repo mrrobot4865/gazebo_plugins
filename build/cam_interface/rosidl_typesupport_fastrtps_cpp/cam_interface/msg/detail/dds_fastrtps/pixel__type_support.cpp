@@ -32,12 +32,22 @@ cdr_serialize(
   const cam_interface::msg::Pixel & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: im_data
+  // Member: timestamp
+  cdr << ros_message.timestamp;
+  // Member: height
+  cdr << ros_message.height;
+  // Member: width
+  cdr << ros_message.width;
+  // Member: encoding
+  cdr << ros_message.encoding;
+  // Member: is_bigendian
+  cdr << ros_message.is_bigendian;
+  // Member: step
+  cdr << ros_message.step;
+  // Member: data
   {
-    cdr << ros_message.im_data;
+    cdr << ros_message.data;
   }
-  // Member: name
-  cdr << ros_message.name;
   return true;
 }
 
@@ -47,13 +57,28 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   cam_interface::msg::Pixel & ros_message)
 {
-  // Member: im_data
-  {
-    cdr >> ros_message.im_data;
-  }
+  // Member: timestamp
+  cdr >> ros_message.timestamp;
 
-  // Member: name
-  cdr >> ros_message.name;
+  // Member: height
+  cdr >> ros_message.height;
+
+  // Member: width
+  cdr >> ros_message.width;
+
+  // Member: encoding
+  cdr >> ros_message.encoding;
+
+  // Member: is_bigendian
+  cdr >> ros_message.is_bigendian;
+
+  // Member: step
+  cdr >> ros_message.step;
+
+  // Member: data
+  {
+    cdr >> ros_message.data;
+  }
 
   return true;
 }
@@ -71,17 +96,50 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: im_data
+  // Member: timestamp
   {
-    size_t array_size = 3;
-    size_t item_size = sizeof(ros_message.im_data[0]);
+    size_t item_size = sizeof(ros_message.timestamp);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: height
+  {
+    size_t item_size = sizeof(ros_message.height);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: width
+  {
+    size_t item_size = sizeof(ros_message.width);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: encoding
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.encoding.size() + 1);
+  // Member: is_bigendian
+  {
+    size_t item_size = sizeof(ros_message.is_bigendian);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: step
+  {
+    size_t item_size = sizeof(ros_message.step);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: data
+  {
+    size_t array_size = ros_message.data.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.data[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.name.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -106,16 +164,34 @@ max_serialized_size_Pixel(
   is_plain = true;
 
 
-  // Member: im_data
+  // Member: timestamp
   {
-    size_t array_size = 3;
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: height
+  {
+    size_t array_size = 1;
 
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: name
+  // Member: width
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: encoding
   {
     size_t array_size = 1;
 
@@ -128,6 +204,35 @@ max_serialized_size_Pixel(
     }
   }
 
+  // Member: is_bigendian
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: step
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: data
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -136,7 +241,7 @@ max_serialized_size_Pixel(
     using DataType = cam_interface::msg::Pixel;
     is_plain =
       (
-      offsetof(DataType, name) +
+      offsetof(DataType, data) +
       last_member_size
       ) == ret_val;
   }

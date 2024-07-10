@@ -59,4 +59,5 @@ CMakeFiles/cam_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupp
  /home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface/rosidl_generator_c/cam_interface/msg/detail/pixel__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h

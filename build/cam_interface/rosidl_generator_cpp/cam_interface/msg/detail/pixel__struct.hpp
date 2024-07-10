@@ -38,42 +38,94 @@ struct Pixel_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      std::fill<typename std::array<float, 3>::iterator, float>(this->im_data.begin(), this->im_data.end(), 0.0f);
-      this->name = "";
+      this->timestamp = 0ll;
+      this->height = 0ul;
+      this->width = 0ul;
+      this->encoding = "";
+      this->is_bigendian = 0;
+      this->step = 0ul;
     }
   }
 
   explicit Pixel_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : im_data(_alloc),
-    name(_alloc)
+  : encoding(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      std::fill<typename std::array<float, 3>::iterator, float>(this->im_data.begin(), this->im_data.end(), 0.0f);
-      this->name = "";
+      this->timestamp = 0ll;
+      this->height = 0ul;
+      this->width = 0ul;
+      this->encoding = "";
+      this->is_bigendian = 0;
+      this->step = 0ul;
     }
   }
 
   // field types and members
-  using _im_data_type =
-    std::array<float, 3>;
-  _im_data_type im_data;
-  using _name_type =
+  using _timestamp_type =
+    int64_t;
+  _timestamp_type timestamp;
+  using _height_type =
+    uint32_t;
+  _height_type height;
+  using _width_type =
+    uint32_t;
+  _width_type width;
+  using _encoding_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _name_type name;
+  _encoding_type encoding;
+  using _is_bigendian_type =
+    uint8_t;
+  _is_bigendian_type is_bigendian;
+  using _step_type =
+    uint32_t;
+  _step_type step;
+  using _data_type =
+    std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+  _data_type data;
 
   // setters for named parameter idiom
-  Type & set__im_data(
-    const std::array<float, 3> & _arg)
+  Type & set__timestamp(
+    const int64_t & _arg)
   {
-    this->im_data = _arg;
+    this->timestamp = _arg;
     return *this;
   }
-  Type & set__name(
+  Type & set__height(
+    const uint32_t & _arg)
+  {
+    this->height = _arg;
+    return *this;
+  }
+  Type & set__width(
+    const uint32_t & _arg)
+  {
+    this->width = _arg;
+    return *this;
+  }
+  Type & set__encoding(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
-    this->name = _arg;
+    this->encoding = _arg;
+    return *this;
+  }
+  Type & set__is_bigendian(
+    const uint8_t & _arg)
+  {
+    this->is_bigendian = _arg;
+    return *this;
+  }
+  Type & set__step(
+    const uint32_t & _arg)
+  {
+    this->step = _arg;
+    return *this;
+  }
+  Type & set__data(
+    const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+  {
+    this->data = _arg;
     return *this;
   }
 
@@ -119,10 +171,25 @@ struct Pixel_
   // comparison operators
   bool operator==(const Pixel_ & other) const
   {
-    if (this->im_data != other.im_data) {
+    if (this->timestamp != other.timestamp) {
       return false;
     }
-    if (this->name != other.name) {
+    if (this->height != other.height) {
+      return false;
+    }
+    if (this->width != other.width) {
+      return false;
+    }
+    if (this->encoding != other.encoding) {
+      return false;
+    }
+    if (this->is_bigendian != other.is_bigendian) {
+      return false;
+    }
+    if (this->step != other.step) {
+      return false;
+    }
+    if (this->data != other.data) {
       return false;
     }
     return true;

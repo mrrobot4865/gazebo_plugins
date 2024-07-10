@@ -3138,8 +3138,236 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
   /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/pixel.hpp \
   /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__struct.hpp \
   /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__builder.hpp \
-  /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__traits.hpp
+  /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__traits.hpp \
+  /usr/include/opencv4/opencv2/opencv.hpp \
+  /usr/include/opencv4/opencv2/opencv_modules.hpp \
+  /usr/include/opencv4/opencv2/core.hpp \
+  /usr/include/opencv4/opencv2/core/cvdef.h \
+  /usr/include/opencv4/opencv2/core/version.hpp \
+  /usr/include/opencv4/opencv2/core/hal/interface.h \
+  /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+  /usr/include/opencv4/opencv2/core/base.hpp \
+  /usr/include/opencv4/opencv2/core/cvstd.hpp \
+  /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+  /usr/include/opencv4/opencv2/core/neon_utils.hpp \
+  /usr/include/opencv4/opencv2/core/vsx_utils.hpp \
+  /usr/include/opencv4/opencv2/core/check.hpp \
+  /usr/include/opencv4/opencv2/core/traits.hpp \
+  /usr/include/opencv4/opencv2/core/matx.hpp \
+  /usr/include/opencv4/opencv2/core/saturate.hpp \
+  /usr/include/opencv4/opencv2/core/fast_math.hpp \
+  /usr/include/opencv4/opencv2/core/types.hpp \
+  /usr/include/c++/11/cfloat \
+  /usr/include/opencv4/opencv2/core/mat.hpp \
+  /usr/include/opencv4/opencv2/core/bufferpool.hpp \
+  /usr/include/opencv4/opencv2/core/mat.inl.hpp \
+  /usr/include/opencv4/opencv2/core/persistence.hpp \
+  /usr/include/opencv4/opencv2/core/operations.hpp \
+  /usr/include/opencv4/opencv2/core/cvstd.inl.hpp \
+  /usr/include/opencv4/opencv2/core/utility.hpp \
+  /usr/include/opencv4/opencv2/core/optim.hpp \
+  /usr/include/opencv4/opencv2/core/ovx.hpp \
+  /usr/include/opencv4/opencv2/core/cvdef.h \
+  /usr/include/opencv4/opencv2/calib3d.hpp \
+  /usr/include/opencv4/opencv2/features2d.hpp \
+  /usr/include/opencv4/opencv2/flann/miniflann.hpp \
+  /usr/include/opencv4/opencv2/flann/defines.h \
+  /usr/include/opencv4/opencv2/flann/config.h \
+  /usr/include/opencv4/opencv2/core/affine.hpp \
+  /usr/include/opencv4/opencv2/dnn.hpp \
+  /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+  /usr/include/opencv4/opencv2/core/async.hpp \
+  /usr/include/opencv4/opencv2/dnn/version.hpp \
+  /usr/include/opencv4/opencv2/dnn/dict.hpp \
+  /usr/include/opencv4/opencv2/dnn/layer.hpp \
+  /usr/include/opencv4/opencv2/dnn/dnn.inl.hpp \
+  /usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
+  /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+  /usr/include/opencv4/opencv2/flann.hpp \
+  /usr/include/opencv4/opencv2/flann/flann_base.hpp \
+  /usr/include/opencv4/opencv2/flann/general.h \
+  /usr/include/opencv4/opencv2/flann/matrix.h \
+  /usr/include/opencv4/opencv2/flann/params.h \
+  /usr/include/opencv4/opencv2/flann/any.h \
+  /usr/include/opencv4/opencv2/flann/defines.h \
+  /usr/include/opencv4/opencv2/flann/saving.h \
+  /usr/include/opencv4/opencv2/flann/nn_index.h \
+  /usr/include/opencv4/opencv2/flann/result_set.h \
+  /usr/include/opencv4/opencv2/flann/all_indices.h \
+  /usr/include/opencv4/opencv2/flann/kdtree_index.h \
+  /usr/include/opencv4/opencv2/flann/dynamic_bitset.h \
+  /usr/include/opencv4/opencv2/flann/dist.h \
+  /usr/include/opencv4/opencv2/flann/heap.h \
+  /usr/include/opencv4/opencv2/flann/allocator.h \
+  /usr/include/opencv4/opencv2/flann/random.h \
+  /usr/include/opencv4/opencv2/flann/kdtree_single_index.h \
+  /usr/include/opencv4/opencv2/flann/kmeans_index.h \
+  /usr/include/opencv4/opencv2/flann/logger.h \
+  /usr/include/opencv4/opencv2/flann/composite_index.h \
+  /usr/include/opencv4/opencv2/flann/linear_index.h \
+  /usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
+  /usr/include/opencv4/opencv2/flann/lsh_index.h \
+  /usr/include/opencv4/opencv2/flann/lsh_table.h \
+  /usr/include/opencv4/opencv2/flann/autotuned_index.h \
+  /usr/include/opencv4/opencv2/flann/ground_truth.h \
+  /usr/include/opencv4/opencv2/flann/index_testing.h \
+  /usr/include/opencv4/opencv2/flann/timer.h \
+  /usr/include/opencv4/opencv2/flann/sampling.h \
+  /usr/include/opencv4/opencv2/highgui.hpp \
+  /usr/include/opencv4/opencv2/imgcodecs.hpp \
+  /usr/include/opencv4/opencv2/videoio.hpp \
+  /usr/include/opencv4/opencv2/imgproc.hpp \
+  /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
+  /usr/include/opencv4/opencv2/ml.hpp \
+  /usr/include/opencv4/opencv2/ml/ml.inl.hpp \
+  /usr/include/opencv4/opencv2/objdetect.hpp \
+  /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
+  /usr/include/opencv4/opencv2/objdetect/face.hpp \
+  /usr/include/opencv4/opencv2/photo.hpp \
+  /usr/include/opencv4/opencv2/stitching.hpp \
+  /usr/include/opencv4/opencv2/stitching/warpers.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+  /usr/include/opencv4/opencv2/core/cuda.hpp \
+  /usr/include/opencv4/opencv2/core/cuda_types.hpp \
+  /usr/include/opencv4/opencv2/core/cuda.inl.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/util.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/blenders.hpp \
+  /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+  /usr/include/opencv4/opencv2/video.hpp \
+  /usr/include/opencv4/opencv2/video/tracking.hpp \
+  /usr/include/opencv4/opencv2/video/background_segm.hpp
 
+
+/usr/include/opencv4/opencv2/video/background_segm.hpp:
+
+/usr/include/opencv4/opencv2/video/tracking.hpp:
+
+/usr/include/opencv4/opencv2/video.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/util.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/matchers.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/warpers.hpp:
+
+/usr/include/opencv4/opencv2/stitching/warpers.hpp:
+
+/usr/include/opencv4/opencv2/stitching.hpp:
+
+/usr/include/opencv4/opencv2/photo.hpp:
+
+/usr/include/opencv4/opencv2/objdetect/face.hpp:
+
+/usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
+
+/usr/include/opencv4/opencv2/objdetect.hpp:
+
+/usr/include/opencv4/opencv2/videoio.hpp:
+
+/usr/include/opencv4/opencv2/highgui.hpp:
+
+/usr/include/opencv4/opencv2/flann/sampling.h:
+
+/usr/include/opencv4/opencv2/flann/timer.h:
+
+/usr/include/opencv4/opencv2/flann/index_testing.h:
+
+/usr/include/opencv4/opencv2/flann/lsh_table.h:
+
+/usr/include/opencv4/opencv2/flann/lsh_index.h:
+
+/usr/include/opencv4/opencv2/flann/linear_index.h:
+
+/usr/include/opencv4/opencv2/flann/composite_index.h:
+
+/usr/include/opencv4/opencv2/flann/kmeans_index.h:
+
+/usr/include/opencv4/opencv2/flann/random.h:
+
+/usr/include/opencv4/opencv2/flann/allocator.h:
+
+/usr/include/opencv4/opencv2/flann/heap.h:
+
+/usr/include/opencv4/opencv2/flann/dynamic_bitset.h:
+
+/usr/include/opencv4/opencv2/flann/kdtree_index.h:
+
+/usr/include/opencv4/opencv2/flann/result_set.h:
+
+/usr/include/opencv4/opencv2/flann/nn_index.h:
+
+/usr/include/opencv4/opencv2/flann/saving.h:
+
+/usr/include/opencv4/opencv2/flann/params.h:
+
+/usr/include/opencv4/opencv2/flann/general.h:
+
+/usr/include/opencv4/opencv2/flann/flann_base.hpp:
+
+/usr/include/opencv4/opencv2/flann.hpp:
+
+/usr/include/opencv4/opencv2/dnn/dnn.inl.hpp:
+
+/usr/include/opencv4/opencv2/dnn/dict.hpp:
+
+/usr/include/opencv4/opencv2/dnn/version.hpp:
+
+/usr/include/opencv4/opencv2/core/async.hpp:
+
+/usr/include/opencv4/opencv2/dnn.hpp:
+
+/usr/include/opencv4/opencv2/flann/config.h:
+
+/usr/include/opencv4/opencv2/flann/defines.h:
+
+/usr/include/opencv4/opencv2/flann/miniflann.hpp:
+
+/usr/include/opencv4/opencv2/features2d.hpp:
+
+/usr/include/opencv4/opencv2/calib3d.hpp:
+
+/usr/include/opencv4/opencv2/core/ovx.hpp:
+
+/usr/include/opencv4/opencv2/core/optim.hpp:
+
+/usr/include/opencv4/opencv2/core/utility.hpp:
+
+/usr/include/opencv4/opencv2/core/persistence.hpp:
+
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:
+
+/usr/include/c++/11/cfloat:
+
+/usr/include/opencv4/opencv2/core/types.hpp:
+
+/usr/include/opencv4/opencv2/core/fast_math.hpp:
+
+/usr/include/opencv4/opencv2/core/matx.hpp:
+
+/usr/include/opencv4/opencv2/core/traits.hpp:
+
+/usr/include/opencv4/opencv2/core/vsx_utils.hpp:
+
+/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
+
+/usr/include/opencv4/opencv2/core/cvstd.hpp:
+
+/usr/include/opencv4/opencv2/core/cvdef.h:
 
 /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__traits.hpp:
 
@@ -3221,6 +3449,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/gazebo-11/gazebo/common/MeshLoader.hh:
 
+/usr/include/opencv4/opencv2/imgproc.hpp:
+
 /usr/include/ignition/math6/ignition/math/Matrix4.hh:
 
 /usr/include/gazebo-11/gazebo/common/ColladaLoader.hh:
@@ -3235,6 +3465,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/gazebo-11/gazebo/physics/UniversalJoint.hh:
 
+/usr/include/opencv4/opencv2/core/neon_utils.hpp:
+
 /usr/include/gazebo-11/gazebo/physics/SurfaceParams.hh:
 
 /usr/include/gazebo-11/gazebo/physics/Wind.hh:
@@ -3248,6 +3480,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/gazebo-11/gazebo/physics/PlaneShape.hh:
 
 /usr/include/gazebo-11/gazebo/physics/RayShape.hh:
+
+/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:
 
 /usr/include/gazebo-11/gazebo/physics/MeshShape.hh:
 
@@ -3470,6 +3704,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/ignition/msgs5/ignition/msgs/param.pb.h:
 
 /usr/include/ignition/msgs5/ignition/msgs/world_stats.pb.h:
+
+/usr/include/opencv4/opencv2/core/operations.hpp:
 
 /usr/include/ignition/msgs5/ignition/msgs/web_request.pb.h:
 
@@ -3723,6 +3959,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/oneapi/tbb/detail/_flow_graph_join_impl.h:
 
+/usr/include/opencv4/opencv2/core/version.hpp:
+
 /usr/include/oneapi/tbb/detail/_flow_graph_types_impl.h:
 
 /usr/include/oneapi/tbb/detail/_flow_graph_cache_impl.h:
@@ -3823,6 +4061,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/boost/asio/detail/strand_executor_service.hpp:
 
+/usr/include/opencv4/opencv2/core/affine.hpp:
+
 /usr/include/boost/asio/impl/thread_pool.ipp:
 
 /usr/include/boost/asio/detail/bulk_executor_op.hpp:
@@ -3903,6 +4143,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/boost/asio/detail/resolve_op.hpp:
 
+/usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
+
 /usr/include/boost/asio/detail/resolve_endpoint_op.hpp:
 
 /usr/include/boost/asio/detail/resolver_service.hpp:
@@ -3964,6 +4206,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/boost/asio/detail/impl/strand_service.ipp:
 
 /usr/include/boost/asio/io_context_strand.hpp:
+
+/usr/include/opencv4/opencv2/opencv_modules.hpp:
 
 /usr/include/boost/asio/high_resolution_timer.hpp:
 
@@ -4084,6 +4328,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/boost/chrono/clock_string.hpp:
 
 /usr/include/boost/predef/detail/test.h:
+
+/usr/include/opencv4/opencv2/flann/any.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h:
 
@@ -4323,6 +4569,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/boost/mpl/tag.hpp:
 
+/usr/include/opencv4/opencv2/core/cuda.inl.hpp:
+
 /usr/include/boost/mpl/aux_/numeric_op.hpp:
 
 /usr/include/boost/mpl/aux_/comparison_op.hpp:
@@ -4462,6 +4710,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/c++/11/memory:
 
 /usr/include/boost/thread/lock_guard.hpp:
+
+/usr/include/opencv4/opencv2/core/bufferpool.hpp:
 
 /usr/include/sdformat-9.7/sdf/Link.hh:
 
@@ -4675,6 +4925,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp:
 
+/usr/include/opencv4/opencv2/stitching/detail/camera.hpp:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h:
 
 /usr/include/x86_64-linux-gnu/libavcodec/codec.h:
@@ -4883,11 +5135,15 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
 
+/usr/include/opencv4/opencv2/ml.hpp:
+
 /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
 
 /usr/include/boost/preprocessor/facilities/expand.hpp:
 
 /usr/include/boost/asio/detail/reactor_fwd.hpp:
+
+/usr/include/opencv4/opencv2/dnn/dnn.hpp:
 
 /usr/include/boost/preprocessor/tuple/elem.hpp:
 
@@ -4998,6 +5254,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
 
 /usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
+
+/usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h:
 
 /usr/include/gazebo-11/gazebo/msgs/fog.pb.h:
 
@@ -5553,9 +5811,13 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:
 
+/usr/include/opencv4/opencv2/imgcodecs.hpp:
+
 /usr/include/c++/11/bits/localefwd.h:
 
 /usr/include/boost/filesystem/path.hpp:
+
+/usr/include/opencv4/opencv2/flann/ground_truth.h:
 
 /usr/include/ignition/math6/ignition/math/Color.hh:
 
@@ -5706,6 +5968,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/boost/mpl/aux_/arithmetic_op.hpp:
 
 /usr/include/c++/11/algorithm:
+
+/usr/include/opencv4/opencv2/flann/dist.h:
 
 /usr/include/google/protobuf/message_lite.h:
 
@@ -6137,6 +6401,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/boost/type_traits/is_constructible.hpp:
 
+/usr/include/opencv4/opencv2/stitching/detail/blenders.hpp:
+
 /usr/include/boost/predef/architecture.h:
 
 /usr/include/boost/thread/executors/executor.hpp:
@@ -6473,6 +6739,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/c++/11/bits/alloc_traits.h:
 
+/usr/include/opencv4/opencv2/dnn/layer.hpp:
+
 /usr/include/boost/type_traits/add_const.hpp:
 
 /usr/include/sdformat-9.7/sdf/World.hh:
@@ -6739,6 +7007,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/sdformat-9.7/sdf/ForceTorque.hh:
 
+/usr/include/opencv4/opencv2/flann/logger.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_use_intra_process.hpp:
 
 /usr/include/google/protobuf/port_def.inc:
@@ -6748,6 +7018,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/boost/asio/basic_seq_packet_socket.hpp:
 
 /usr/include/sdformat-9.7/sdf/Plane.hh:
+
+/usr/include/opencv4/opencv2/core/base.hpp:
 
 /usr/include/ignition/msgs5/ignition/msgs/sensor_v.pb.h:
 
@@ -7049,6 +7321,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/boost/mpl/aux_/config/msvc.hpp:
 
+/usr/include/opencv4/opencv2/core/saturate.hpp:
+
 /usr/include/boost/mpl/aux_/config/workaround.hpp:
 
 /usr/include/boost/thread/pthread/mutex.hpp:
@@ -7068,6 +7342,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/boost/mpl/aux_/na_spec.hpp:
+
+/usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h:
 
 /usr/include/boost/bind/placeholders.hpp:
 
@@ -7120,6 +7396,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/boost/move/detail/unique_ptr_meta_utils.hpp:
 
 /usr/include/boost/move/adl_move_swap.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
 
 /usr/include/boost/none.hpp:
 
@@ -7277,6 +7555,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/boost/atomic/detail/fp_ops_generic.hpp:
 
+/usr/include/opencv4/opencv2/ml/ml.inl.hpp:
+
 /usr/include/boost/atomic/detail/fp_operations_fwd.hpp:
 
 /usr/include/ignition/transport8/ignition/transport/detail/Node.hh:
@@ -7294,6 +7574,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
 
 /usr/include/boost/atomic/detail/extra_fp_operations_fwd.hpp:
+
+/usr/include/opencv4/opencv2/core/cuda.hpp:
 
 /usr/include/ignition/msgs5/ignition/msgs/gps.pb.h:
 
@@ -7545,6 +7827,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/boost/type_traits/has_minus_assign.hpp:
 
+/usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
+
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
 
 /usr/include/c++/11/fstream:
@@ -7576,6 +7860,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/gazebo-11/gazebo/msgs/log_control.pb.h:
 
 /usr/include/boost/optional/optional.hpp:
+
+/usr/include/opencv4/opencv2/core/cuda_types.hpp:
 
 /usr/include/boost/type_traits/alignment_of.hpp:
 
@@ -7833,6 +8119,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/google/protobuf/map_entry_lite.h:
 
+/usr/include/opencv4/opencv2/flann/all_indices.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
 
 /usr/include/boost/asio/detail/timer_scheduler_fwd.hpp:
@@ -8004,6 +8292,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/boost/functional/hash_fwd.hpp:
 
 /opt/ros/humble/include/rmw/rmw/serialized_message.h:
+
+/usr/include/opencv4/opencv2/opencv.hpp:
 
 /usr/include/boost/asio/detail/recycling_allocator.hpp:
 
@@ -8275,6 +8565,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/boost/asio/prefer.hpp:
 
+/usr/include/opencv4/opencv2/core/check.hpp:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
@@ -8495,6 +8787,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
 
+/usr/include/opencv4/opencv2/flann/autotuned_index.h:
+
 /usr/include/boost/type_index/stl_type_index.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:
@@ -8703,11 +8997,15 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/include/gazebo-11/gazebo/msgs/sim_event.pb.h:
 
+/usr/include/opencv4/opencv2/core/hal/interface.h:
+
 /usr/include/gazebo-11/gazebo/msgs/sonar_stamped.pb.h:
 
 /usr/include/gazebo-11/gazebo/msgs/subscribe.pb.h:
 
 /usr/include/gazebo-11/gazebo/msgs/tactile.pb.h:
+
+/usr/include/opencv4/opencv2/imgproc/segmentation.hpp:
 
 /usr/include/boost/asio/detail/timer_queue_base.hpp:
 
@@ -8795,6 +9093,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
 
+/usr/include/opencv4/opencv2/core.hpp:
+
 /usr/include/c++/11/bits/stl_set.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
@@ -8804,6 +9104,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
+
+/usr/include/opencv4/opencv2/core/mat.hpp:
 
 /usr/include/asm-generic/socket.h:
 
@@ -8894,6 +9196,8 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/ignition/math6/gz/math/SphericalCoordinates.hh:
 
 /usr/include/boost/asio/execution/detail/as_invocable.hpp:
+
+/usr/include/opencv4/opencv2/flann/kdtree_single_index.h:
 
 /usr/include/boost/asio/detail/atomic_count.hpp:
 
@@ -9294,5 +9598,7 @@ CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o: /home/dev/gazebo-tut
 /usr/include/boost/filesystem/string_file.hpp:
 
 /usr/include/boost/asio/wait_traits.hpp:
+
+/usr/include/opencv4/opencv2/flann/matrix.h:
 
 /usr/include/boost/asio/bind_executor.hpp:

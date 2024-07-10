@@ -5,11 +5,20 @@
 
 module cam_interface {
   module msg {
-    typedef float float__3[3];
     struct Pixel {
-      float__3 im_data;
+      int64 timestamp;
 
-      string name;
+      uint32 height;
+
+      uint32 width;
+
+      string encoding;
+
+      uint8 is_bigendian;
+
+      uint32 step;
+
+      sequence<uint8> data;
     };
   };
 };
