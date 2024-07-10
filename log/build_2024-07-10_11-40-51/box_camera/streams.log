@@ -1,0 +1,28 @@
+[0.062s] Invoking command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera': AMENT_PREFIX_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera -- -j4 -l4
+[0.110s] [35m[1mConsolidate compiler generated dependencies of target box_camera_plugin[0m
+[0.158s] [ 50%] [32mBuilding CXX object CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o[0m
+[10.277s] [01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:[m[K In constructor ‘[01m[Kgazebo::BoxCameraPlugin::BoxCameraPlugin()[m[K’:
+[10.278s] [01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:32:89:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[10.278s]    32 |     BoxCameraPlugin::BoxCameraPlugin(): impl_(std::make_unique<BoxCameraPluginPrivate>()[01;31m[K)[m[K{
+[10.278s]       |                                                                                         [01;31m[K^[m[K
+[10.278s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[10.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[10.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.278s]                  from [01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:5[m[K,
+[10.278s]                  from [01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1[m[K:
+[10.278s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[10.278s]  1294 |   [01;36m[KNode[m[K(
+[10.279s]       |   [01;36m[K^~~~[m[K
+[10.279s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[10.279s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[10.279s]   101 |   explicit [01;36m[KNode[m[K(
+[10.279s]       |            [01;36m[K^~~~[m[K
+[10.279s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[10.279s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[10.279s]    89 |   explicit [01;36m[KNode[m[K(
+[10.279s]       |            [01;36m[K^~~~[m[K
+[10.279s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[12.233s] gmake[2]: *** [CMakeFiles/box_camera_plugin.dir/build.make:76: CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o] Error 1
+[12.233s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/box_camera_plugin.dir/all] Error 2
+[12.233s] gmake: *** [Makefile:146: all] Error 2
+[12.235s] Invoked command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera' returned '2': AMENT_PREFIX_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera -- -j4 -l4

@@ -1,0 +1,10 @@
+/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera/CMakeFiles/uninstall.dir
+/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera/CMakeFiles/box_camera_uninstall.dir
+/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera/CMakeFiles/box_camera_plugin.dir
+/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera/CMakeFiles/test.dir
+/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera/CMakeFiles/edit_cache.dir
+/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera/CMakeFiles/rebuild_cache.dir
+/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera/CMakeFiles/list_install_components.dir
+/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera/CMakeFiles/install.dir
+/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera/CMakeFiles/install/local.dir
+/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera/CMakeFiles/install/strip.dir

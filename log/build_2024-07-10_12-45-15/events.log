@@ -1,0 +1,916 @@
+[0.000000] (-) TimerEvent: {}
+[0.000697] (-) JobUnselected: {'identifier': 'cam_interface'}
+[0.000917] (box_camera) JobQueued: {'identifier': 'box_camera', 'dependencies': OrderedDict([('cam_interface', '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface')])}
+[0.001008] (box_camera) JobStarted: {'identifier': 'box_camera'}
+[0.099835] (-) TimerEvent: {}
+[0.201449] (-) TimerEvent: {}
+[0.230132] (box_camera) JobProgress: {'identifier': 'box_camera', 'progress': 'cmake'}
+[0.236605] (box_camera) JobProgress: {'identifier': 'box_camera', 'progress': 'build'}
+[0.240396] (box_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera', '--', '-j4', '-l4'], 'cwd': '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'dev'), ('GIO_MODULE_DIR', '/home/dev/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dev'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.91.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NVM_BIN', '/home/dev/.nvm/versions/node/v20.15.0/bin'), ('NVM_INC', '/home/dev/.nvm/versions/node/v20.15.0/include/node'), ('GTK_IM_MODULE_FILE', '/home/dev/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/163/usr/share/code/code'), ('MANAGERPID', '820'), ('SYSTEMD_EXEC_PID', '972'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4476'), ('NVM_DIR', '/home/dev/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dev'), ('JOURNAL_STREAM', '8:29794'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'dev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/dev/workspaces/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dev/.local/bin:/home/dev/.nvm/versions/node/v20.15.0/bin:/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ares:@/tmp/.ICE-unix/933,unix/ares:/tmp/.ICE-unix/933'), ('GTK_EXE_PREFIX', '/snap/code/163/usr'), ('INVOCATION_ID', 'd73913e065c24ff4ba4d2c5ac4c1c68c'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/163/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O06EQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-981371030b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/dev/snap/code/163/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '45'), ('AMENT_PREFIX_PATH', '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/dev/gazebo-tutorials/gazebo-drone-ros/build:/home/dev/gazebo-tutorials/gazebo-drone-ros/build'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:/opt/ros/humble')]), 'shell': False}
+[0.301696] (-) TimerEvent: {}
+[0.382321] (box_camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target box_camera_plugin\x1b[0m\n'}
+[0.401781] (-) TimerEvent: {}
+[0.500949] (box_camera) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o\x1b[0m\n'}
+[0.501870] (-) TimerEvent: {}
+[0.602341] (-) TimerEvent: {}
+[0.703247] (-) TimerEvent: {}
+[0.805284] (-) TimerEvent: {}
+[0.906661] (-) TimerEvent: {}
+[1.007847] (-) TimerEvent: {}
+[1.108402] (-) TimerEvent: {}
+[1.209176] (-) TimerEvent: {}
+[1.309931] (-) TimerEvent: {}
+[1.410296] (-) TimerEvent: {}
+[1.510907] (-) TimerEvent: {}
+[1.611698] (-) TimerEvent: {}
+[1.713852] (-) TimerEvent: {}
+[1.814474] (-) TimerEvent: {}
+[1.918667] (-) TimerEvent: {}
+[2.019038] (-) TimerEvent: {}
+[2.120083] (-) TimerEvent: {}
+[2.222354] (-) TimerEvent: {}
+[2.322706] (-) TimerEvent: {}
+[2.423680] (-) TimerEvent: {}
+[2.526374] (-) TimerEvent: {}
+[2.626735] (-) TimerEvent: {}
+[2.727675] (-) TimerEvent: {}
+[2.829976] (-) TimerEvent: {}
+[2.930546] (-) TimerEvent: {}
+[3.031528] (-) TimerEvent: {}
+[3.133651] (-) TimerEvent: {}
+[3.234099] (-) TimerEvent: {}
+[3.334558] (-) TimerEvent: {}
+[3.437634] (-) TimerEvent: {}
+[3.538484] (-) TimerEvent: {}
+[3.639023] (-) TimerEvent: {}
+[3.740013] (-) TimerEvent: {}
+[3.841938] (-) TimerEvent: {}
+[3.944510] (-) TimerEvent: {}
+[4.046685] (-) TimerEvent: {}
+[4.147305] (-) TimerEvent: {}
+[4.248192] (-) TimerEvent: {}
+[4.350506] (-) TimerEvent: {}
+[4.451436] (-) TimerEvent: {}
+[4.553594] (-) TimerEvent: {}
+[4.654895] (-) TimerEvent: {}
+[4.757244] (-) TimerEvent: {}
+[4.858354] (-) TimerEvent: {}
+[4.961632] (-) TimerEvent: {}
+[5.063802] (-) TimerEvent: {}
+[5.166213] (-) TimerEvent: {}
+[5.267005] (-) TimerEvent: {}
+[5.368098] (-) TimerEvent: {}
+[5.471238] (-) TimerEvent: {}
+[5.571669] (-) TimerEvent: {}
+[5.672555] (-) TimerEvent: {}
+[5.774692] (-) TimerEvent: {}
+[5.875846] (-) TimerEvent: {}
+[5.977191] (-) TimerEvent: {}
+[6.078926] (-) TimerEvent: {}
+[6.179790] (-) TimerEvent: {}
+[6.281496] (-) TimerEvent: {}
+[6.383255] (-) TimerEvent: {}
+[6.483964] (-) TimerEvent: {}
+[6.586142] (-) TimerEvent: {}
+[6.687636] (-) TimerEvent: {}
+[6.788065] (-) TimerEvent: {}
+[6.888495] (-) TimerEvent: {}
+[6.989110] (-) TimerEvent: {}
+[7.089650] (-) TimerEvent: {}
+[7.189949] (-) TimerEvent: {}
+[7.290432] (-) TimerEvent: {}
+[7.391137] (-) TimerEvent: {}
+[7.491671] (-) TimerEvent: {}
+[7.592619] (-) TimerEvent: {}
+[7.694511] (-) TimerEvent: {}
+[7.795159] (-) TimerEvent: {}
+[7.896395] (-) TimerEvent: {}
+[7.999077] (-) TimerEvent: {}
+[8.100095] (-) TimerEvent: {}
+[8.200565] (-) TimerEvent: {}
+[8.301028] (-) TimerEvent: {}
+[8.401742] (-) TimerEvent: {}
+[8.502456] (-) TimerEvent: {}
+[8.602818] (-) TimerEvent: {}
+[8.703610] (-) TimerEvent: {}
+[8.805723] (-) TimerEvent: {}
+[8.907973] (-) TimerEvent: {}
+[9.010626] (-) TimerEvent: {}
+[9.111132] (-) TimerEvent: {}
+[9.212477] (-) TimerEvent: {}
+[9.314806] (-) TimerEvent: {}
+[9.415194] (-) TimerEvent: {}
+[9.516147] (-) TimerEvent: {}
+[9.618479] (-) TimerEvent: {}
+[9.719053] (-) TimerEvent: {}
+[9.820127] (-) TimerEvent: {}
+[9.922673] (-) TimerEvent: {}
+[10.023388] (-) TimerEvent: {}
+[10.124271] (-) TimerEvent: {}
+[10.226162] (-) TimerEvent: {}
+[10.326499] (-) TimerEvent: {}
+[10.426865] (-) TimerEvent: {}
+[10.531024] (-) TimerEvent: {}
+[10.631470] (-) TimerEvent: {}
+[10.731811] (-) TimerEvent: {}
+[10.832805] (-) TimerEvent: {}
+[10.934169] (-) TimerEvent: {}
+[11.035759] (-) TimerEvent: {}
+[11.136648] (-) TimerEvent: {}
+[11.238435] (-) TimerEvent: {}
+[11.338744] (-) TimerEvent: {}
+[11.441214] (-) TimerEvent: {}
+[11.541954] (-) TimerEvent: {}
+[11.642321] (-) TimerEvent: {}
+[11.743306] (-) TimerEvent: {}
+[11.845721] (-) TimerEvent: {}
+[11.946241] (-) TimerEvent: {}
+[12.047017] (-) TimerEvent: {}
+[12.149830] (-) TimerEvent: {}
+[12.250231] (-) TimerEvent: {}
+[12.351312] (-) TimerEvent: {}
+[12.454396] (-) TimerEvent: {}
+[12.555828] (-) TimerEvent: {}
+[12.658777] (-) TimerEvent: {}
+[12.759425] (-) TimerEvent: {}
+[12.861500] (-) TimerEvent: {}
+[12.962929] (-) TimerEvent: {}
+[13.063862] (-) TimerEvent: {}
+[13.166067] (-) TimerEvent: {}
+[13.269546] (-) TimerEvent: {}
+[13.372347] (-) TimerEvent: {}
+[13.475124] (-) TimerEvent: {}
+[13.575851] (-) TimerEvent: {}
+[13.676938] (-) TimerEvent: {}
+[13.778416] (-) TimerEvent: {}
+[13.879414] (-) TimerEvent: {}
+[13.981797] (-) TimerEvent: {}
+[14.082974] (-) TimerEvent: {}
+[14.183522] (-) TimerEvent: {}
+[14.284867] (-) TimerEvent: {}
+[14.386996] (-) TimerEvent: {}
+[14.487929] (-) TimerEvent: {}
+[14.589975] (-) TimerEvent: {}
+[14.690552] (-) TimerEvent: {}
+[14.791029] (-) TimerEvent: {}
+[14.892010] (-) TimerEvent: {}
+[14.994315] (-) TimerEvent: {}
+[15.094659] (-) TimerEvent: {}
+[15.194970] (-) TimerEvent: {}
+[15.297880] (-) TimerEvent: {}
+[15.398603] (-) TimerEvent: {}
+[15.499146] (-) TimerEvent: {}
+[15.602505] (-) TimerEvent: {}
+[15.702915] (-) TimerEvent: {}
+[15.805603] (-) TimerEvent: {}
+[15.910522] (-) TimerEvent: {}
+[16.010889] (-) TimerEvent: {}
+[16.111238] (-) TimerEvent: {}
+[16.212260] (-) TimerEvent: {}
+[16.313239] (-) TimerEvent: {}
+[16.415706] (-) TimerEvent: {}
+[16.516149] (-) TimerEvent: {}
+[16.616769] (-) TimerEvent: {}
+[16.718514] (-) TimerEvent: {}
+[16.819447] (-) TimerEvent: {}
+[16.919766] (-) TimerEvent: {}
+[17.021016] (-) TimerEvent: {}
+[17.123707] (-) TimerEvent: {}
+[17.224217] (-) TimerEvent: {}
+[17.325100] (-) TimerEvent: {}
+[17.427613] (-) TimerEvent: {}
+[17.529402] (-) TimerEvent: {}
+[17.629973] (-) TimerEvent: {}
+[17.731526] (-) TimerEvent: {}
+[17.832984] (-) TimerEvent: {}
+[17.934607] (-) TimerEvent: {}
+[18.035785] (-) TimerEvent: {}
+[18.136690] (-) TimerEvent: {}
+[18.237811] (-) TimerEvent: {}
+[18.340232] (-) TimerEvent: {}
+[18.440950] (-) TimerEvent: {}
+[18.541386] (-) TimerEvent: {}
+[18.642212] (-) TimerEvent: {}
+[18.742814] (-) TimerEvent: {}
+[18.843202] (-) TimerEvent: {}
+[18.943912] (-) TimerEvent: {}
+[19.045705] (-) TimerEvent: {}
+[19.147331] (-) TimerEvent: {}
+[19.250524] (-) TimerEvent: {}
+[19.351275] (-) TimerEvent: {}
+[19.452490] (-) TimerEvent: {}
+[19.559408] (-) TimerEvent: {}
+[19.660037] (-) TimerEvent: {}
+[19.763296] (-) TimerEvent: {}
+[19.863958] (-) TimerEvent: {}
+[19.965067] (-) TimerEvent: {}
+[20.067573] (-) TimerEvent: {}
+[20.168187] (-) TimerEvent: {}
+[20.269406] (-) TimerEvent: {}
+[20.372271] (-) TimerEvent: {}
+[20.472992] (-) TimerEvent: {}
+[20.574136] (-) TimerEvent: {}
+[20.677594] (-) TimerEvent: {}
+[20.778623] (-) TimerEvent: {}
+[20.879031] (-) TimerEvent: {}
+[20.979499] (-) TimerEvent: {}
+[21.082146] (-) TimerEvent: {}
+[21.183015] (-) TimerEvent: {}
+[21.283578] (-) TimerEvent: {}
+[21.384048] (-) TimerEvent: {}
+[21.484503] (-) TimerEvent: {}
+[21.584867] (-) TimerEvent: {}
+[21.685238] (-) TimerEvent: {}
+[21.785997] (-) TimerEvent: {}
+[21.886421] (-) TimerEvent: {}
+[21.987382] (-) TimerEvent: {}
+[22.088532] (-) TimerEvent: {}
+[22.188909] (-) TimerEvent: {}
+[22.289889] (-) TimerEvent: {}
+[22.392567] (-) TimerEvent: {}
+[22.493432] (-) TimerEvent: {}
+[22.594608] (-) TimerEvent: {}
+[22.697230] (-) TimerEvent: {}
+[22.797588] (-) TimerEvent: {}
+[22.898692] (-) TimerEvent: {}
+[23.000345] (-) TimerEvent: {}
+[23.101009] (-) TimerEvent: {}
+[23.201987] (-) TimerEvent: {}
+[23.304527] (-) TimerEvent: {}
+[23.405340] (-) TimerEvent: {}
+[23.508737] (-) TimerEvent: {}
+[23.609645] (-) TimerEvent: {}
+[23.710422] (-) TimerEvent: {}
+[23.811504] (-) TimerEvent: {}
+[23.912672] (-) TimerEvent: {}
+[24.013224] (-) TimerEvent: {}
+[24.114311] (-) TimerEvent: {}
+[24.216611] (-) TimerEvent: {}
+[24.317892] (-) TimerEvent: {}
+[24.419711] (-) TimerEvent: {}
+[24.522563] (-) TimerEvent: {}
+[24.623039] (-) TimerEvent: {}
+[24.724137] (-) TimerEvent: {}
+[24.826256] (-) TimerEvent: {}
+[24.927876] (-) TimerEvent: {}
+[25.031021] (-) TimerEvent: {}
+[25.134075] (-) TimerEvent: {}
+[25.235557] (-) TimerEvent: {}
+[25.337215] (-) TimerEvent: {}
+[25.437606] (-) TimerEvent: {}
+[25.538833] (-) TimerEvent: {}
+[25.640658] (-) TimerEvent: {}
+[25.741780] (-) TimerEvent: {}
+[25.843732] (-) TimerEvent: {}
+[25.944747] (-) TimerEvent: {}
+[26.045265] (-) TimerEvent: {}
+[26.146182] (-) TimerEvent: {}
+[26.247989] (-) TimerEvent: {}
+[26.348848] (-) TimerEvent: {}
+[26.449942] (-) TimerEvent: {}
+[26.552236] (-) TimerEvent: {}
+[26.652726] (-) TimerEvent: {}
+[26.753037] (-) TimerEvent: {}
+[26.853510] (-) TimerEvent: {}
+[26.956198] (-) TimerEvent: {}
+[27.056569] (-) TimerEvent: {}
+[27.157533] (-) TimerEvent: {}
+[27.259827] (-) TimerEvent: {}
+[27.360226] (-) TimerEvent: {}
+[27.460725] (-) TimerEvent: {}
+[27.563201] (-) TimerEvent: {}
+[27.664220] (-) TimerEvent: {}
+[27.767217] (-) TimerEvent: {}
+[27.869351] (-) TimerEvent: {}
+[27.970489] (-) TimerEvent: {}
+[28.072097] (-) TimerEvent: {}
+[28.172503] (-) TimerEvent: {}
+[28.273666] (-) TimerEvent: {}
+[28.375784] (-) TimerEvent: {}
+[28.476487] (-) TimerEvent: {}
+[28.577007] (-) TimerEvent: {}
+[28.680189] (-) TimerEvent: {}
+[28.780783] (-) TimerEvent: {}
+[28.881355] (-) TimerEvent: {}
+[28.982366] (-) TimerEvent: {}
+[29.083329] (-) TimerEvent: {}
+[29.184211] (-) TimerEvent: {}
+[29.286662] (-) TimerEvent: {}
+[29.388143] (-) TimerEvent: {}
+[29.488554] (-) TimerEvent: {}
+[29.588963] (-) TimerEvent: {}
+[29.689443] (-) TimerEvent: {}
+[29.789860] (-) TimerEvent: {}
+[29.890474] (-) TimerEvent: {}
+[29.990965] (-) TimerEvent: {}
+[30.094221] (-) TimerEvent: {}
+[30.195107] (-) TimerEvent: {}
+[30.296461] (-) TimerEvent: {}
+[30.396858] (-) TimerEvent: {}
+[30.497662] (-) TimerEvent: {}
+[30.600528] (-) TimerEvent: {}
+[30.700899] (-) TimerEvent: {}
+[30.801433] (-) TimerEvent: {}
+[30.905046] (-) TimerEvent: {}
+[31.005872] (-) TimerEvent: {}
+[31.107043] (-) TimerEvent: {}
+[31.209328] (-) TimerEvent: {}
+[31.310374] (-) TimerEvent: {}
+[31.410821] (-) TimerEvent: {}
+[31.511390] (-) TimerEvent: {}
+[31.612022] (-) TimerEvent: {}
+[31.712460] (-) TimerEvent: {}
+[31.812895] (-) TimerEvent: {}
+[31.916852] (-) TimerEvent: {}
+[32.017341] (-) TimerEvent: {}
+[32.118492] (-) TimerEvent: {}
+[32.220130] (-) TimerEvent: {}
+[32.321411] (-) TimerEvent: {}
+[32.424173] (-) TimerEvent: {}
+[32.524741] (-) TimerEvent: {}
+[32.625859] (-) TimerEvent: {}
+[32.728781] (-) TimerEvent: {}
+[32.831506] (-) TimerEvent: {}
+[32.937288] (-) TimerEvent: {}
+[33.037818] (-) TimerEvent: {}
+[33.138643] (-) TimerEvent: {}
+[33.240471] (-) TimerEvent: {}
+[33.341923] (-) TimerEvent: {}
+[33.443629] (-) TimerEvent: {}
+[33.544924] (-) TimerEvent: {}
+[33.645300] (-) TimerEvent: {}
+[33.745944] (-) TimerEvent: {}
+[33.846914] (-) TimerEvent: {}
+[33.948317] (-) TimerEvent: {}
+[34.055457] (-) TimerEvent: {}
+[34.157079] (-) TimerEvent: {}
+[34.260622] (-) TimerEvent: {}
+[34.361116] (-) TimerEvent: {}
+[34.461554] (-) TimerEvent: {}
+[34.561890] (-) TimerEvent: {}
+[34.662942] (-) TimerEvent: {}
+[34.735516] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/functional:59\x1b[m\x1b[K,\n'}
+[34.735783] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[34.735885] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[34.735965] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[34.736044] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[34.736123] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[34.736212] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[34.736306] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[34.736395] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[34.736486] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[34.736577] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[34.736665] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[34.736758] (box_camera) StderrLine: {'line': b'/usr/include/c++/11/bits/std_function.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = std::_Bind<void (gazebo::BoxCameraPluginPrivate::*(std::unique_ptr<gazebo::BoxCameraPluginPrivate>))()>; _Constraints = void; _Res = void; _ArgTypes = {}]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[34.736882] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:65:71:\x1b[m\x1b[K   required from here\n'}
+[34.737000] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:439:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: std::function target must be copy-constructible\n'}
+[34.737114] (box_camera) StderrLine: {'line': b'  439 |           static_assert(is_copy_constructible<__decay_t<_Functor>>::\x1b[01;31m\x1b[Kvalue\x1b[m\x1b[K,\n'}
+[34.740973] (box_camera) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[34.741185] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:439:69:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::integral_constant<bool, false>::value\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[34.763004] (-) TimerEvent: {}
+[34.865503] (-) TimerEvent: {}
+[34.968476] (-) TimerEvent: {}
+[35.068843] (-) TimerEvent: {}
+[35.169244] (-) TimerEvent: {}
+[35.272600] (-) TimerEvent: {}
+[35.374163] (-) TimerEvent: {}
+[35.474921] (-) TimerEvent: {}
+[35.575600] (-) TimerEvent: {}
+[35.648189] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.649274] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.649636] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.653247] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.656921] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.658999] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.659806] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.660227] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.660509] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.660594] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.660680] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.660779] (box_camera) StderrLine: {'line': b'/usr/include/c++/11/functional: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<_Functor(_Bound_args ...)>::_Bind(_Functor&&, _Args&& ...) [with _Args = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >&}; _Functor = void (gazebo::BoxCameraPluginPrivate::*)(); _Bound_args = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[35.660872] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:792:38:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Ktypename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (gazebo::BoxCameraPluginPrivate::*)(); _BoundArgs = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >&}; typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type = std::_Bind_helper<false, void (gazebo::BoxCameraPluginPrivate::*)(), std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >&>::type; std::__is_socketlike<_Func> = std::__is_socketlike<void (gazebo::BoxCameraPluginPrivate::*)(), void (gazebo::BoxCameraPluginPrivate::*)()>; typename std::decay<_Tp>::type = void (gazebo::BoxCameraPluginPrivate::*)()]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.660987] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:65:81:\x1b[m\x1b[K   required from here\n'}
+[35.661076] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::tuple(std::unique_ptr<gazebo::BoxCameraPluginPrivate>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.661172] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;31m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.661255] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.661333] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.661411] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.661504] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.661598] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.661687] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.661771] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.661859] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.661945] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:888:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Alloc, class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, std::tuple<_Args2 ...>&&) [with _Alloc = _Alloc; _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.662165] (box_camera) StderrLine: {'line': b'  888 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(allocator_arg_t __tag, const _Alloc& __a,\n'}
+[35.662341] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.662479] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:888:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.662569] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.662652] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.662736] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.662830] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.662924] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.663014] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.663099] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.663189] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.663298] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.663398] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.663487] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.663571] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[35.663652] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.663733] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.663822] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.663907] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.663997] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.664078] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.664153] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.664241] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.664333] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.664429] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:876:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Alloc, class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, std::tuple<_Args2 ...>&&) [with _Alloc = _Alloc; _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.664541] (box_camera) StderrLine: {'line': b'  876 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(allocator_arg_t __tag, const _Alloc& __a,\n'}
+[35.664714] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.664850] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:876:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.667545] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.668400] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.668646] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.668835] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.669127] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.672015] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.673130] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.673402] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.673581] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.673734] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.673883] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.674056] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[35.674397] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.674718] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.675087] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.675415] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.675591] (-) TimerEvent: {}
+[35.675765] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.675909] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.676020] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.676138] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.676243] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.676383] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:865:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Alloc, class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_explicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const std::tuple<_Args2 ...>&) [with _Alloc = _Alloc; _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.676527] (box_camera) StderrLine: {'line': b'  865 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(allocator_arg_t __tag, const _Alloc& __a,\n'}
+[35.676618] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.676705] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:865:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.676797] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.676884] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.676992] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.677087] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.677188] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.677277] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.677371] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.677469] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.677563] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.677664] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.677755] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.677836] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[35.677919] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.678000] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.678165] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.678291] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.678373] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.678454] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.678546] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.678630] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.678713] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.678800] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:853:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Alloc, class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_implicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const std::tuple<_Args2 ...>&) [with _Alloc = _Alloc; _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.678896] (box_camera) StderrLine: {'line': b'  853 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(allocator_arg_t __tag, const _Alloc& __a,\n'}
+[35.678984] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.679072] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:853:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.679158] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.679239] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.679328] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.679414] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.679506] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.679589] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.679677] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.679765] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.679876] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.679969] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.680053] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.680149] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[35.680244] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.680338] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.680432] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.680541] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.682149] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.682335] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.685147] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.686112] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.686449] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.687531] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:845:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Alloc> std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, std::tuple<_Elements>&&) [with _Alloc = _Alloc; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.690104] (box_camera) StderrLine: {'line': b'  845 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(allocator_arg_t __tag, const _Alloc& __a, tuple&& __in)\n'}
+[35.690625] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.691450] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:845:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.691780] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.692027] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.692558] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.692915] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.693207] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.693461] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.696451] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.697083] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.697310] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.697524] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.697840] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.699137] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[35.699483] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.699623] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.699740] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.699838] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.699948] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.700037] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.700207] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.700294] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.700395] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.700493] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:840:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Alloc> std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const std::tuple<_Elements>&) [with _Alloc = _Alloc; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.700602] (box_camera) StderrLine: {'line': b'  840 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(allocator_arg_t __tag, const _Alloc& __a, const tuple& __in)\n'}
+[35.700686] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.700772] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:840:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.700863] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.700949] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.701043] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.701124] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.701285] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.701367] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.701817] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.701936] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.702048] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.702220] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.702470] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.702731] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[35.705889] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.706335] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.706581] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.708161] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.711013] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.711325] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.711491] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.711593] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.711681] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.711781] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:833:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Alloc, class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, _UElements&& ...) [with _Alloc = _Alloc; _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.711930] (box_camera) StderrLine: {'line': b'  833 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(allocator_arg_t __tag, const _Alloc& __a,\n'}
+[35.712469] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.712924] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:833:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.713260] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.713630] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.713749] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.713844] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.713953] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.714073] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.714209] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.714357] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.714446] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.715351] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.718070] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.718373] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects at least 2 arguments, 1 provided\n'}
+[35.723296] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.723560] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.723718] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.723907] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.724402] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.724808] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.725166] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.725310] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.725431] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.725548] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:823:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Alloc, class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, _UElements&& ...) [with _Alloc = _Alloc; _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.725666] (box_camera) StderrLine: {'line': b'  823 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(allocator_arg_t __tag, const _Alloc& __a,\n'}
+[35.725760] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.725853] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:823:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.725912] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.725971] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.726114] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.727540] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.729773] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.730134] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.730336] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.731561] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.731695] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.732672] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.735281] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.736060] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects at least 2 arguments, 1 provided\n'}
+[35.736310] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.736562] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.740641] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.740975] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.741183] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.741598] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.742492] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.742833] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.743178] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.743312] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:815:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Alloc, bool _NotEmpty, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_explicitly_constructible<const unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >&>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const _Elements& ...) [with _Alloc = _Alloc; bool _NotEmpty = _NotEmpty; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<const _Elements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.743464] (box_camera) StderrLine: {'line': b'  815 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(allocator_arg_t __tag, const _Alloc& __a,\n'}
+[35.743599] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.743704] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:815:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.743971] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.744067] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.744158] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.744255] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.744354] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.744442] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.744530] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.744740] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.744832] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.744919] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.745004] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.745087] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[35.745174] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.745253] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.745342] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.745537] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.745641] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.745731] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.745811] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.745922] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.746006] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.746136] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:807:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Alloc, bool _NotEmpty, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_implicitly_constructible<const unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >&>(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const _Elements& ...) [with _Alloc = _Alloc; bool _NotEmpty = _NotEmpty; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<const _Elements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.746419] (box_camera) StderrLine: {'line': b'  807 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(allocator_arg_t __tag, const _Alloc& __a,\n'}
+[35.746518] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.746602] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:807:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.746691] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.746781] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.746907] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.747273] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.751125] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.755157] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.755401] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.755737] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.755971] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.756758] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.757152] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.757510] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[35.757645] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.757746] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.757857] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.757970] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.758521] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.761913] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.762262] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.762459] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.762770] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.762907] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:801:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Alloc, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<std::is_object<_Alloc>::value>::__is_implicitly_default_constructible(), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&) [with _Alloc = _Alloc; typename std::enable_if<std::tuple<_Elements>::_TCC<std::is_object<_Alloc>::value>::__is_implicitly_default_constructible(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.763064] (box_camera) StderrLine: {'line': b'  801 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(allocator_arg_t __tag, const _Alloc& __a)\n'}
+[35.763188] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.763287] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:801:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.767020] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.767276] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.771468] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.771703] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.771856] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.772140] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.772320] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.772740] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.773337] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.773549] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.773827] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.773985] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[35.774123] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.774222] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.774311] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.774407] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.774519] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.774712] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.774800] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.774883] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.774966] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.775044] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:792:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(std::tuple<_Args1 ...>&&) [with _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.775165] (box_camera) StderrLine: {'line': b'  792 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(tuple<_UElements...>&& __in)\n'}
+[35.775255] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.775339] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:792:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.775558] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.775650] (-) TimerEvent: {}
+[35.775787] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.775889] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.775990] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.776079] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.776165] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.776384] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.776484] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.776567] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.776654] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.776741] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.776832] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<gazebo::BoxCameraPluginPrivate>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<_Tps ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.776931] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.777024] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.777264] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.777430] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.777538] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.780785] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.781357] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.787729] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.787973] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.788113] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:783:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(std::tuple<_Args1 ...>&&) [with _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.788240] (box_camera) StderrLine: {'line': b'  783 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(tuple<_UElements...>&& __in)\n'}
+[35.788520] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.792005] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:783:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.792280] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.792712] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.792911] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.793029] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.793123] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.793219] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.793480] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.793586] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.793664] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.793742] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.793827] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.793911] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<gazebo::BoxCameraPluginPrivate>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<_Tps ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.793998] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.794346] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.794433] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.794512] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.794584] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.794659] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.794739] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.794814] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.794887] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.795071] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:773:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_explicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(const std::tuple<_Args1 ...>&) [with _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.795207] (box_camera) StderrLine: {'line': b'  773 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(const tuple<_UElements...>& __in)\n'}
+[35.795296] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.795380] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:773:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.795466] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.795552] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.795636] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.795721] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.795806] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.796027] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.796110] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.796188] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.796314] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.796419] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.799604] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.800063] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<gazebo::BoxCameraPluginPrivate>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::tuple<_Tps ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.805232] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.805376] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.805478] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.805582] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.806288] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.806855] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.807080] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.807197] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.807311] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.807416] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:763:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_implicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(const std::tuple<_Args1 ...>&) [with _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<const _UElements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.807679] (box_camera) StderrLine: {'line': b'  763 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(const tuple<_UElements...>& __in)\n'}
+[35.807793] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.807894] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:763:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.808022] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.808112] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.808194] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.808280] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.808487] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.808626] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.808724] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.808810] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.808903] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.808988] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.809117] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.809215] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<gazebo::BoxCameraPluginPrivate>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::tuple<_Tps ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.812821] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.813576] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.817262] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.817712] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.818248] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.818433] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.819482] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.820166] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.820319] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.820430] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:750:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(_UElements&& ...) [with _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_explicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.820543] (box_camera) StderrLine: {'line': b'  750 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(_UElements&&... __elements)\n'}
+[35.820798] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.824217] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:750:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.824694] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:748:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, bool>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.824922] (box_camera) StderrLine: {'line': b'  748 |                _ExplicitCtor<_Valid, _UElements...> = \x1b[01;31m\x1b[Kfalse\x1b[m\x1b[K>\n'}
+[35.825089] (box_camera) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.825201] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:742:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _UElements, bool _Valid, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(_UElements&& ...) [with _UElements = {_UElements ...}; bool _Valid = _Valid; typename std::enable_if<std::tuple<_Elements>::_TCC<_Valid>::__is_implicitly_constructible<_UElements ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.825512] (box_camera) StderrLine: {'line': b'  742 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(_UElements&&... __elements)\n'}
+[35.825638] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.825729] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:742:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.825822] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:740:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, bool>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.825911] (box_camera) StderrLine: {'line': b'  740 |                _ImplicitCtor<_Valid, _UElements...> = \x1b[01;31m\x1b[Ktrue\x1b[m\x1b[K>\n'}
+[35.826009] (box_camera) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[35.826188] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:734:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<bool _NotEmpty, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Cond>::__is_explicitly_constructible<const unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >&>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(const _Elements& ...) [with bool _NotEmpty = _NotEmpty; typename std::enable_if<std::tuple<_Elements>::_TCC<_Dummy>::__is_explicitly_constructible<const _Elements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.826456] (box_camera) StderrLine: {'line': b'  734 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(const _Elements&... __elements)\n'}
+[35.826544] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.826629] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:734:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.826714] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:732:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, bool>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.826811] (box_camera) StderrLine: {'line': b'  732 |                _ExplicitCtor<_NotEmpty, const _Elements&...> = \x1b[01;31m\x1b[Kfalse\x1b[m\x1b[K>\n'}
+[35.826896] (box_camera) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.826979] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:727:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<bool _NotEmpty, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<_Cond>::__is_implicitly_constructible<const unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >&>(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(const _Elements& ...) [with bool _NotEmpty = _NotEmpty; typename std::enable_if<std::tuple<_Elements>::_TCC<_Dummy>::__is_implicitly_constructible<const _Elements& ...>(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.827177] (box_camera) StderrLine: {'line': b'  727 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(const _Elements&... __elements)\n'}
+[35.827275] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.827360] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:727:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.827444] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:725:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, bool>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.827529] (box_camera) StderrLine: {'line': b'  725 |                _ImplicitCtor<_NotEmpty, const _Elements&...> = \x1b[01;31m\x1b[Ktrue\x1b[m\x1b[K>\n'}
+[35.827611] (box_camera) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[35.827694] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:720:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Dummy, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<std::is_void<_Tp>::value>::__is_explicitly_default_constructible(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple() [with _Dummy = _Dummy; typename std::enable_if<std::tuple<_Elements>::_TCC<std::is_void<_Dummy>::value>::__is_explicitly_default_constructible(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.827801] (box_camera) StderrLine: {'line': b'  720 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K()\n'}
+[35.828066] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.831631] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:720:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.832190] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.836312] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.836606] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.837250] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.837608] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.838399] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.838843] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.838974] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.839081] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.839176] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.839265] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.839355] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[35.839581] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.839751] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.839828] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.839906] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.839997] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.840080] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.840157] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.840238] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.840315] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.840527] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:713:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Dummy, typename std::enable_if<std::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >::_TCC<std::is_void<_Tp>::value>::__is_implicitly_default_constructible(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple() [with _Dummy = _Dummy; typename std::enable_if<std::tuple<_Elements>::_TCC<std::is_void<_Dummy>::value>::__is_implicitly_default_constructible(), bool>::type <anonymous> = <anonymous>; _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.840611] (box_camera) StderrLine: {'line': b'  713 |         \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K()\n'}
+[35.840684] (box_camera) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.840754] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:713:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[35.840826] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[35.840907] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[35.840987] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[35.841061] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Quaternion.hh:20\x1b[m\x1b[K,\n'}
+[35.841140] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Pose3.hh:20\x1b[m\x1b[K,\n'}
+[35.841306] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/ignition/math/Pose3.hh:18\x1b[m\x1b[K,\n'}
+[35.841388] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:23\x1b[m\x1b[K,\n'}
+[35.841456] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.841523] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.841591] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.841674] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.841747] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:490:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[35.841826] (box_camera) StderrLine: {'line': b'  490 |         : _M_f(std::move(__f)), \x1b[01;36m\x1b[K_M_bound_args(std::forward<_Args>(__args)...)\x1b[m\x1b[K\n'}
+[35.841911] (box_camera) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[35.841987] (box_camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[35.842311] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[35.842419] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/Actor.hh:20\x1b[m\x1b[K,\n'}
+[35.842501] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/sdformat-9.7/sdf/sdf.hh:2\x1b[m\x1b[K,\n'}
+[35.842585] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gazebo-11/gazebo/common/Plugin.hh:33\x1b[m\x1b[K,\n'}
+[35.842664] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/include/boxCamera/boxCameraPlugin.hpp:4\x1b[m\x1b[K,\n'}
+[35.842744] (box_camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:1\x1b[m\x1b[K:\n'}
+[35.842830] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:756:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::tuple<_Elements>::tuple(std::tuple<_Elements>&&) [with _Elements = {std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.842918] (box_camera) StderrLine: {'line': b'  756 |       constexpr \x1b[01;36m\x1b[Ktuple\x1b[m\x1b[K(tuple&&) = default;\n'}
+[35.843134] (box_camera) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[35.843223] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:756:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<gazebo::BoxCameraPluginPrivate>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<std::unique_ptr<gazebo::BoxCameraPluginPrivate, std::default_delete<gazebo::BoxCameraPluginPrivate> > >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.843319] (box_camera) StderrLine: {'line': b'  756 |       constexpr tuple(\x1b[01;36m\x1b[Ktuple&&\x1b[m\x1b[K) = default;\n'}
+[35.843400] (box_camera) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[35.876122] (-) TimerEvent: {}
+[35.978866] (-) TimerEvent: {}
+[36.079620] (-) TimerEvent: {}
+[36.179994] (-) TimerEvent: {}
+[36.280513] (-) TimerEvent: {}
+[36.381546] (-) TimerEvent: {}
+[36.482546] (-) TimerEvent: {}
+[36.587346] (-) TimerEvent: {}
+[36.688874] (-) TimerEvent: {}
+[36.790785] (-) TimerEvent: {}
+[36.891239] (-) TimerEvent: {}
+[36.992345] (-) TimerEvent: {}
+[37.094597] (-) TimerEvent: {}
+[37.196749] (-) TimerEvent: {}
+[37.297563] (-) TimerEvent: {}
+[37.400349] (-) TimerEvent: {}
+[37.500832] (-) TimerEvent: {}
+[37.601178] (-) TimerEvent: {}
+[37.704427] (-) TimerEvent: {}
+[37.804845] (-) TimerEvent: {}
+[37.905901] (-) TimerEvent: {}
+[38.007891] (-) TimerEvent: {}
+[38.108435] (-) TimerEvent: {}
+[38.209489] (-) TimerEvent: {}
+[38.311929] (-) TimerEvent: {}
+[38.412913] (-) TimerEvent: {}
+[38.515447] (-) TimerEvent: {}
+[38.617058] (-) TimerEvent: {}
+[38.719930] (-) TimerEvent: {}
+[38.820958] (-) TimerEvent: {}
+[38.921632] (-) TimerEvent: {}
+[39.022652] (-) TimerEvent: {}
+[39.123869] (-) TimerEvent: {}
+[39.224857] (-) TimerEvent: {}
+[39.325252] (-) TimerEvent: {}
+[39.426190] (-) TimerEvent: {}
+[39.528585] (-) TimerEvent: {}
+[39.629356] (-) TimerEvent: {}
+[39.730529] (-) TimerEvent: {}
+[39.832748] (-) TimerEvent: {}
+[39.933490] (-) TimerEvent: {}
+[40.034683] (-) TimerEvent: {}
+[40.137011] (-) TimerEvent: {}
+[40.190876] (box_camera) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/box_camera_plugin.dir/build.make:76: CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o] Error 1\n'}
+[40.194190] (box_camera) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/box_camera_plugin.dir/all] Error 2\n'}
+[40.194808] (box_camera) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[40.203790] (box_camera) CommandEnded: {'returncode': 2}
+[40.237198] (-) TimerEvent: {}
+[40.339367] (-) TimerEvent: {}
+[40.441185] (-) TimerEvent: {}
+[40.542655] (-) TimerEvent: {}
+[40.556270] (box_camera) JobEnded: {'identifier': 'box_camera', 'rc': 2}
+[40.569591] (-) EventReactorShutdown: {}

@@ -1,0 +1,6 @@
+{
+  "package_name": "cam_interface",
+  "non_idl_tuples": [
+    "/home/dev/gazebo-tutorials/gazebo-drone-ros/src/cam_interface:msg/Pixel.msg"
+  ]
+}

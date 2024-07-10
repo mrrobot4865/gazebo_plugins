@@ -1,0 +1,273 @@
+[0.000000] (-) TimerEvent: {}
+[0.000613] (cam_interface) JobQueued: {'identifier': 'cam_interface', 'dependencies': OrderedDict()}
+[0.000799] (box_camera) JobQueued: {'identifier': 'box_camera', 'dependencies': OrderedDict([('cam_interface', '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface')])}
+[0.000898] (cam_interface) JobStarted: {'identifier': 'cam_interface'}
+[0.101017] (-) TimerEvent: {}
+[0.197875] (cam_interface) JobProgress: {'identifier': 'cam_interface', 'progress': 'cmake'}
+[0.201444] (-) TimerEvent: {}
+[0.202397] (cam_interface) JobProgress: {'identifier': 'cam_interface', 'progress': 'build'}
+[0.205631] (cam_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface', '--', '-j4', '-l4'], 'cwd': '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'dev'), ('GIO_MODULE_DIR', '/home/dev/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dev'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.91.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NVM_BIN', '/home/dev/.nvm/versions/node/v20.15.0/bin'), ('NVM_INC', '/home/dev/.nvm/versions/node/v20.15.0/include/node'), ('GTK_IM_MODULE_FILE', '/home/dev/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/163/usr/share/code/code'), ('MANAGERPID', '849'), ('SYSTEMD_EXEC_PID', '992'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3225'), ('NVM_DIR', '/home/dev/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dev'), ('JOURNAL_STREAM', '8:25477'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'dev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/dev/workspaces/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dev/.local/bin:/home/dev/.nvm/versions/node/v20.15.0/bin:/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ares:@/tmp/.ICE-unix/963,unix/ares:/tmp/.ICE-unix/963'), ('GTK_EXE_PREFIX', '/snap/code/163/usr'), ('INVOCATION_ID', '83c9cc1bb66d4234b88386aa6d8c80f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/163/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.P27AQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-981371030b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/dev/snap/code/163/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '45'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.301663] (-) TimerEvent: {}
+[0.337752] (cam_interface) StdoutLine: {'line': b'[  3%] Built target cam_interface__cpp\n'}
+[0.401704] (-) TimerEvent: {}
+[0.403763] (cam_interface) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_cam_interface\n'}
+[0.464782] (cam_interface) StdoutLine: {'line': b'[ 12%] Built target cam_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[0.502738] (-) TimerEvent: {}
+[0.513144] (cam_interface) StdoutLine: {'line': b'[ 22%] Built target cam_interface__rosidl_typesupport_introspection_cpp\n'}
+[0.602577] (-) TimerEvent: {}
+[0.703754] (-) TimerEvent: {}
+[0.804887] (-) TimerEvent: {}
+[0.905921] (-) TimerEvent: {}
+[1.008731] (-) TimerEvent: {}
+[1.109766] (-) TimerEvent: {}
+[1.210894] (-) TimerEvent: {}
+[1.311719] (-) TimerEvent: {}
+[1.412120] (-) TimerEvent: {}
+[1.502481] (cam_interface) StdoutLine: {'line': b'running egg_info\n'}
+[1.506227] (cam_interface) StdoutLine: {'line': b'writing cam_interface.egg-info/PKG-INFO\n'}
+[1.514097] (cam_interface) StdoutLine: {'line': b'writing dependency_links to cam_interface.egg-info/dependency_links.txt\n'}
+[1.516620] (-) TimerEvent: {}
+[1.516914] (cam_interface) StdoutLine: {'line': b'writing top-level names to cam_interface.egg-info/top_level.txt\n'}
+[1.520059] (cam_interface) StdoutLine: {'line': b"reading manifest file 'cam_interface.egg-info/SOURCES.txt'\n"}
+[1.528268] (cam_interface) StdoutLine: {'line': b"writing manifest file 'cam_interface.egg-info/SOURCES.txt'\n"}
+[1.611489] (cam_interface) StdoutLine: {'line': b'[ 22%] Built target ament_cmake_python_build_cam_interface_egg\n'}
+[1.617047] (-) TimerEvent: {}
+[1.677532] (cam_interface) StdoutLine: {'line': b'[ 32%] Built target cam_interface__rosidl_typesupport_cpp\n'}
+[1.717435] (-) TimerEvent: {}
+[1.740279] (cam_interface) StdoutLine: {'line': b'[ 41%] Built target cam_interface__rosidl_generator_c\n'}
+[1.796283] (cam_interface) StdoutLine: {'line': b'[ 51%] Built target cam_interface__rosidl_typesupport_fastrtps_c\n'}
+[1.817439] (-) TimerEvent: {}
+[1.853038] (cam_interface) StdoutLine: {'line': b'[ 61%] Built target cam_interface__rosidl_typesupport_c\n'}
+[1.898334] (cam_interface) StdoutLine: {'line': b'[ 70%] Built target cam_interface__rosidl_typesupport_introspection_c\n'}
+[1.917592] (-) TimerEvent: {}
+[1.950538] (cam_interface) StdoutLine: {'line': b'[ 70%] Built target cam_interface\n'}
+[1.996020] (cam_interface) StdoutLine: {'line': b'[ 74%] Built target cam_interface__py\n'}
+[2.018370] (-) TimerEvent: {}
+[2.053697] (cam_interface) StdoutLine: {'line': b'[ 80%] Built target cam_interface__rosidl_generator_py\n'}
+[2.118239] (-) TimerEvent: {}
+[2.127351] (cam_interface) StdoutLine: {'line': b'[ 87%] Built target cam_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.206420] (cam_interface) StdoutLine: {'line': b'[ 93%] Built target cam_interface__rosidl_typesupport_c__pyext\n'}
+[2.218350] (-) TimerEvent: {}
+[2.268061] (cam_interface) StdoutLine: {'line': b'[100%] Built target cam_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[2.289428] (cam_interface) CommandEnded: {'returncode': 0}
+[2.318847] (-) TimerEvent: {}
+[2.420910] (-) TimerEvent: {}
+[2.432657] (cam_interface) JobProgress: {'identifier': 'cam_interface', 'progress': 'install'}
+[2.458922] (cam_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface'], 'cwd': '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'dev'), ('GIO_MODULE_DIR', '/home/dev/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dev'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.91.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NVM_BIN', '/home/dev/.nvm/versions/node/v20.15.0/bin'), ('NVM_INC', '/home/dev/.nvm/versions/node/v20.15.0/include/node'), ('GTK_IM_MODULE_FILE', '/home/dev/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/163/usr/share/code/code'), ('MANAGERPID', '849'), ('SYSTEMD_EXEC_PID', '992'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3225'), ('NVM_DIR', '/home/dev/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dev'), ('JOURNAL_STREAM', '8:25477'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'dev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/dev/workspaces/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dev/.local/bin:/home/dev/.nvm/versions/node/v20.15.0/bin:/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ares:@/tmp/.ICE-unix/963,unix/ares:/tmp/.ICE-unix/963'), ('GTK_EXE_PREFIX', '/snap/code/163/usr'), ('INVOCATION_ID', '83c9cc1bb66d4234b88386aa6d8c80f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/163/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.P27AQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-981371030b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/dev/snap/code/163/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '45'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.478450] (cam_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.478844] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/ament_index/resource_index/rosidl_interfaces/cam_interface\n'}
+[2.479028] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface\n'}
+[2.479367] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg\n'}
+[2.479541] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.479639] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/pixel.h\n'}
+[2.479735] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail\n'}
+[2.479808] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__functions.c\n'}
+[2.479879] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__type_support.h\n'}
+[2.479957] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__struct.h\n'}
+[2.480032] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__functions.h\n'}
+[2.480188] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/library_path.sh\n'}
+[2.480291] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/library_path.dsv\n'}
+[2.481321] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_generator_c.so\n'}
+[2.485375] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface\n'}
+[2.485866] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg\n'}
+[2.489416] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.489706] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail\n'}
+[2.489976] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__rosidl_typesupport_fastrtps_c.h\n'}
+[2.490081] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[2.490291] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface\n'}
+[2.490383] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg\n'}
+[2.490734] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail\n'}
+[2.491222] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__traits.hpp\n'}
+[2.491461] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__builder.hpp\n'}
+[2.491670] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__struct.hpp\n'}
+[2.491740] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/pixel.hpp\n'}
+[2.491795] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface\n'}
+[2.491886] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg\n'}
+[2.491946] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.491997] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail\n'}
+[2.492069] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/dds_fastrtps\n'}
+[2.492159] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.492307] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.492368] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface\n'}
+[2.492419] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg\n'}
+[2.492467] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.492552] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail\n'}
+[2.492603] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__type_support.c\n'}
+[2.492651] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__rosidl_typesupport_introspection_c.h\n'}
+[2.492706] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_introspection_c.so\n'}
+[2.492776] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_c.so\n'}
+[2.492834] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface\n'}
+[2.492966] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg\n'}
+[2.493019] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail\n'}
+[2.493094] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__type_support.cpp\n'}
+[2.493215] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.493293] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[2.493342] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_cpp.so\n'}
+[2.493390] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/pythonpath.sh\n'}
+[2.493437] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/pythonpath.dsv\n'}
+[2.493502] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface-0.0.0-py3.10.egg-info\n'}
+[2.493584] (cam_interface) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.493686] (cam_interface) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.493751] (cam_interface) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.493846] (cam_interface) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.494045] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface\n'}
+[2.494188] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/_cam_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.494363] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/_cam_interface_s.ep.rosidl_typesupport_c.c\n'}
+[2.494575] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/__init__.py\n'}
+[2.494673] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/libcam_interface__rosidl_generator_py.so\n'}
+[2.494748] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.494824] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.494918] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.495002] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/msg\n'}
+[2.495096] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/msg/_pixel_s.c\n'}
+[2.495179] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/msg/__init__.py\n'}
+[2.495317] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/msg/_pixel.py\n'}
+[2.495418] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/_cam_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.520864] (-) TimerEvent: {}
+[2.600661] (cam_interface) StdoutLine: {'line': b"Listing '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface'...\n"}
+[2.601023] (cam_interface) StdoutLine: {'line': b"Listing '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/msg'...\n"}
+[2.615087] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.616901] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.617408] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.617983] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_generator_py.so\n'}
+[2.618349] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/msg/Pixel.idl\n'}
+[2.618751] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/msg/Pixel.msg\n'}
+[2.618960] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/ament_index/resource_index/package_run_dependencies/cam_interface\n'}
+[2.619093] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/ament_index/resource_index/parent_prefix_path/cam_interface\n'}
+[2.619198] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/ament_prefix_path.sh\n'}
+[2.619282] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/ament_prefix_path.dsv\n'}
+[2.619369] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/path.sh\n'}
+[2.619566] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/path.dsv\n'}
+[2.619725] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/local_setup.bash\n'}
+[2.619840] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/local_setup.sh\n'}
+[2.619923] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/local_setup.zsh\n'}
+[2.620007] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/local_setup.dsv\n'}
+[2.620088] (cam_interface) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/package.dsv\n'}
+[2.620168] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/ament_index/resource_index/packages/cam_interface\n'}
+[2.620249] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_generator_cExport.cmake\n'}
+[2.620421] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.620573] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.620711] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.620823] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_generator_cppExport.cmake\n'}
+[2.620983] (-) TimerEvent: {}
+[2.621196] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.621441] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.621602] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.621768] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.621878] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_cExport.cmake\n'}
+[2.621963] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.622048] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.622134] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.622278] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_cppExport.cmake\n'}
+[2.622384] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.622472] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_generator_pyExport.cmake\n'}
+[2.622552] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.622623] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[2.622702] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.622778] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.622848] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.622921] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.623154] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.623232] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.623304] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interfaceConfig.cmake\n'}
+[2.623374] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interfaceConfig-version.cmake\n'}
+[2.623445] (cam_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/package.xml\n'}
+[2.632849] (cam_interface) CommandEnded: {'returncode': 0}
+[2.722973] (-) TimerEvent: {}
+[2.824379] (-) TimerEvent: {}
+[2.925435] (-) TimerEvent: {}
+[3.026782] (-) TimerEvent: {}
+[3.128288] (-) TimerEvent: {}
+[3.229459] (-) TimerEvent: {}
+[3.330490] (-) TimerEvent: {}
+[3.331528] (cam_interface) JobEnded: {'identifier': 'cam_interface', 'rc': 0}
+[3.336509] (box_camera) JobStarted: {'identifier': 'box_camera'}
+[3.431835] (-) TimerEvent: {}
+[3.534393] (-) TimerEvent: {}
+[3.635174] (-) TimerEvent: {}
+[3.737688] (-) TimerEvent: {}
+[3.738552] (box_camera) JobProgress: {'identifier': 'box_camera', 'progress': 'cmake'}
+[3.739901] (box_camera) JobProgress: {'identifier': 'box_camera', 'progress': 'build'}
+[3.740317] (box_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera', '--', '-j4', '-l4'], 'cwd': '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'dev'), ('GIO_MODULE_DIR', '/home/dev/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dev'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.91.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NVM_BIN', '/home/dev/.nvm/versions/node/v20.15.0/bin'), ('NVM_INC', '/home/dev/.nvm/versions/node/v20.15.0/include/node'), ('GTK_IM_MODULE_FILE', '/home/dev/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/163/usr/share/code/code'), ('MANAGERPID', '849'), ('SYSTEMD_EXEC_PID', '992'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3225'), ('NVM_DIR', '/home/dev/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dev'), ('JOURNAL_STREAM', '8:25477'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'dev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/dev/workspaces/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dev/.local/bin:/home/dev/.nvm/versions/node/v20.15.0/bin:/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ares:@/tmp/.ICE-unix/963,unix/ares:/tmp/.ICE-unix/963'), ('GTK_EXE_PREFIX', '/snap/code/163/usr'), ('INVOCATION_ID', '83c9cc1bb66d4234b88386aa6d8c80f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/163/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.P27AQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-981371030b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/dev/snap/code/163/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '45'), ('AMENT_PREFIX_PATH', '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:/opt/ros/humble')]), 'shell': False}
+[3.837805] (-) TimerEvent: {}
+[3.920584] (box_camera) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o\x1b[0m\n'}
+[3.937936] (-) TimerEvent: {}
+[4.041374] (-) TimerEvent: {}
+[4.141851] (-) TimerEvent: {}
+[4.242716] (-) TimerEvent: {}
+[4.344986] (-) TimerEvent: {}
+[4.445718] (-) TimerEvent: {}
+[4.546675] (-) TimerEvent: {}
+[4.649003] (-) TimerEvent: {}
+[4.749561] (-) TimerEvent: {}
+[4.850000] (-) TimerEvent: {}
+[4.953092] (-) TimerEvent: {}
+[5.054643] (-) TimerEvent: {}
+[5.156378] (-) TimerEvent: {}
+[5.257267] (-) TimerEvent: {}
+[5.358006] (-) TimerEvent: {}
+[5.460167] (-) TimerEvent: {}
+[5.561079] (-) TimerEvent: {}
+[5.663915] (-) TimerEvent: {}
+[5.764895] (-) TimerEvent: {}
+[5.866249] (-) TimerEvent: {}
+[5.966841] (-) TimerEvent: {}
+[6.067777] (-) TimerEvent: {}
+[6.169366] (-) TimerEvent: {}
+[6.269873] (-) TimerEvent: {}
+[6.370926] (-) TimerEvent: {}
+[6.473995] (-) TimerEvent: {}
+[6.575345] (-) TimerEvent: {}
+[6.677216] (-) TimerEvent: {}
+[6.779782] (-) TimerEvent: {}
+[6.880075] (-) TimerEvent: {}
+[6.980547] (-) TimerEvent: {}
+[7.081074] (-) TimerEvent: {}
+[7.181634] (-) TimerEvent: {}
+[7.282693] (-) TimerEvent: {}
+[7.384955] (-) TimerEvent: {}
+[7.485371] (-) TimerEvent: {}
+[7.586351] (-) TimerEvent: {}
+[7.688686] (-) TimerEvent: {}
+[7.789413] (-) TimerEvent: {}
+[7.890731] (-) TimerEvent: {}
+[7.992013] (-) TimerEvent: {}
+[8.093271] (-) TimerEvent: {}
+[8.193626] (-) TimerEvent: {}
+[8.297266] (-) TimerEvent: {}
+[8.397645] (-) TimerEvent: {}
+[8.498666] (-) TimerEvent: {}
+[8.600936] (-) TimerEvent: {}
+[8.701351] (-) TimerEvent: {}
+[8.801745] (-) TimerEvent: {}
+[8.904860] (-) TimerEvent: {}
+[9.005520] (-) TimerEvent: {}
+[9.105870] (-) TimerEvent: {}
+[9.206747] (-) TimerEvent: {}
+[9.309417] (-) TimerEvent: {}
+[9.409785] (-) TimerEvent: {}
+[9.512707] (-) TimerEvent: {}
+[9.613872] (-) TimerEvent: {}
+[9.714918] (-) TimerEvent: {}
+[9.817323] (-) TimerEvent: {}
+[9.919551] (-) TimerEvent: {}
+[10.020597] (-) TimerEvent: {}
+[10.121960] (-) TimerEvent: {}
+[10.222792] (-) TimerEvent: {}
+[10.324225] (-) TimerEvent: {}
+[10.425348] (-) TimerEvent: {}
+[10.525791] (-) TimerEvent: {}
+[10.596748] (box_camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:8:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcam_interface/pixel.hpp: No such file or directory\n'}
+[10.597589] (box_camera) StderrLine: {'line': b'    8 | #include \x1b[01;31m\x1b[K<cam_interface/pixel.hpp>\x1b[m\x1b[K\n'}
+[10.598013] (box_camera) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.601265] (box_camera) StderrLine: {'line': b'compilation terminated.\n'}
+[10.626853] (-) TimerEvent: {}
+[10.654147] (box_camera) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/box_camera_plugin.dir/build.make:76: CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o] Error 1\n'}
+[10.654448] (box_camera) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/box_camera_plugin.dir/all] Error 2\n'}
+[10.654632] (box_camera) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.656673] (box_camera) CommandEnded: {'returncode': 2}
+[10.727419] (-) TimerEvent: {}
+[10.829408] (-) TimerEvent: {}
+[10.929737] (-) TimerEvent: {}
+[11.003238] (box_camera) JobEnded: {'identifier': 'box_camera', 'rc': 2}
+[11.018260] (-) EventReactorShutdown: {}

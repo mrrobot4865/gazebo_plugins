@@ -1,0 +1,12 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o[0m
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:[m[K In member function ‘[01m[Kvirtual void gazebo::BoxCameraPlugin::Load(gazebo::sensors::SensorPtr, sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:42:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   42 |         printf("Plugin Loaded !\n")
+      |                                    [01;31m[K^[m[K
+      |                                    [32m[K;[m[K
+   43 | 
+   44 |     [32m[K}[m[K
+      |     [32m[K~[m[K                               
+gmake[2]: *** [CMakeFiles/box_camera_plugin.dir/build.make:76: CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/box_camera_plugin.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,10 @@
+[0.285s] Invoking command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera': AMENT_PREFIX_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera -- -j4 -l4
+[0.693s] [ 50%] [32mBuilding CXX object CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o[0m
+[8.441s] [01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kcam_msgs/msg/Pixel.hpp: No such file or directory
+[8.441s]     6 | #include [01;31m[K<cam_msgs/msg/Pixel.hpp>[m[K
+[8.441s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.441s] compilation terminated.
+[8.487s] gmake[2]: *** [CMakeFiles/box_camera_plugin.dir/build.make:76: CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o] Error 1
+[8.488s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/box_camera_plugin.dir/all] Error 2
+[8.488s] gmake: *** [Makefile:146: all] Error 2
+[8.493s] Invoked command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera' returned '2': AMENT_PREFIX_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera -- -j4 -l4

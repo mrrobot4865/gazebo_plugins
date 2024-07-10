@@ -1,0 +1,293 @@
+[0.000000] (-) TimerEvent: {}
+[0.000330] (-) JobUnselected: {'identifier': 'cam_interface'}
+[0.000393] (box_camera) JobQueued: {'identifier': 'box_camera', 'dependencies': OrderedDict()}
+[0.001024] (box_camera) JobStarted: {'identifier': 'box_camera'}
+[0.056854] (box_camera) JobProgress: {'identifier': 'box_camera', 'progress': 'cmake'}
+[0.057085] (box_camera) Command: {'cmd': ['/usr/bin/cmake', '/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera', '-DCMAKE_INSTALL_PREFIX=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera'], 'cwd': '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'dev'), ('GIO_MODULE_DIR', '/home/dev/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', '/snap/code/163/usr'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', 'x11'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dev'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', '/snap/code/163/usr/lib/locale:/snap/code/163/usr/lib/locale'), ('OLDPWD', '/home/dev/gazebo-tutorials/gazebo-drone-ros/src/camera_msgs'), ('TERM_PROGRAM_VERSION', '1.91.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0:/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0:/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NVM_BIN', '/home/dev/.nvm/versions/node/v20.15.0/bin'), ('NVM_INC', '/home/dev/.nvm/versions/node/v20.15.0/include/node'), ('GTK_IM_MODULE_FILE', '/home/dev/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', '/home/dev/snap/code/163/.local/share/glib-2.0/schemas'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/163/usr/share/code/code'), ('MANAGERPID', '826'), ('SYSTEMD_EXEC_PID', '967'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3806'), ('NVM_DIR', '/home/dev/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dev'), ('JOURNAL_STREAM', '8:28556'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'dev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/dev/workspaces/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/dev/.nvm/versions/node/v20.15.0/bin:/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ares:@/tmp/.ICE-unix/931,unix/ares:/tmp/.ICE-unix/931'), ('GTK_EXE_PREFIX', '/snap/code/163/usr'), ('INVOCATION_ID', '0f2d1487ae4d47e2895911bac89c54a5'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/163/usr/lib/locale:/snap/code/163/usr/lib/locale:/snap/code/163/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', '/home/dev/snap/code/common/.cache/gio-modules'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ATHCQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-981371030b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/dev/snap/code/163/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '45'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'Unity'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', '/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0:/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', '/home/dev/snap/code/common/.cache/immodules/immodules.cache'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099626] (-) TimerEvent: {}
+[0.104546] (box_camera) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.155502] (box_camera) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.161778] (box_camera) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199732] (-) TimerEvent: {}
+[0.222305] (box_camera) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.228974] (box_camera) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.229219] (box_camera) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.229688] (box_camera) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.232291] (box_camera) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299827] (-) TimerEvent: {}
+[0.304480] (box_camera) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.311876] (box_camera) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.312247] (box_camera) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.312895] (box_camera) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.315142] (box_camera) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399921] (-) TimerEvent: {}
+[0.475557] (box_camera) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.500031] (-) TimerEvent: {}
+[0.553606] (box_camera) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.588035] (box_camera) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.591830] (box_camera) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.598671] (box_camera) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.600115] (-) TimerEvent: {}
+[0.612697] (box_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.629865] (box_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.688721] (box_camera) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.690905] (box_camera) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700209] (-) TimerEvent: {}
+[0.779298] (box_camera) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.800290] (-) TimerEvent: {}
+[0.803687] (box_camera) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.848730] (box_camera) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.856840] (box_camera) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.900391] (-) TimerEvent: {}
+[0.922839] (box_camera) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.923109] (box_camera) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.991946] (box_camera) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.993316] (box_camera) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.000508] (-) TimerEvent: {}
+[1.100816] (-) TimerEvent: {}
+[1.138504] (box_camera) StdoutLine: {'line': b'-- Found rclpy: 3.3.11 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.143898] (box_camera) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.144175] (box_camera) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PkgConfig)\n'}
+[1.144289] (box_camera) StderrLine: {'line': b'  does not match the name of the calling package (gazebo).  This can lead to\n'}
+[1.144370] (box_camera) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.144442] (box_camera) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.144505] (box_camera) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.144572] (box_camera) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)\n'}
+[1.144651] (box_camera) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)\n'}
+[1.144719] (box_camera) StderrLine: {'line': b'  CMakeLists.txt:21 (find_package)\n'}
+[1.144791] (box_camera) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.144855] (box_camera) StderrLine: {'line': b'\x1b[0m\n'}
+[1.144920] (box_camera) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.145544] (box_camera) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.156676] (box_camera) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.200923] (-) TimerEvent: {}
+[1.252343] (box_camera) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.295785] (box_camera) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.301022] (-) TimerEvent: {}
+[1.313465] (box_camera) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.336947] (box_camera) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.349447] (box_camera) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.353369] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.358602] (box_camera) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.359990] (box_camera) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.360406] (box_camera) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.364981] (box_camera) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.376344] (box_camera) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.401121] (-) TimerEvent: {}
+[1.404595] (box_camera) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.413760] (box_camera) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.424003] (box_camera) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.428781] (box_camera) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.428981] (box_camera) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.433215] (box_camera) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.433402] (box_camera) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.438773] (box_camera) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.438979] (box_camera) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.443299] (box_camera) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.443527] (box_camera) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.447794] (box_camera) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.447968] (box_camera) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.451909] (box_camera) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.501211] (-) TimerEvent: {}
+[1.551658] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.553502] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.553891] (box_camera) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.569342] (box_camera) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.578566] (box_camera) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.582999] (box_camera) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.594223] (box_camera) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.601331] (-) TimerEvent: {}
+[1.630154] (box_camera) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.635528] (box_camera) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.647170] (box_camera) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.675910] (box_camera) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.677847] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.678391] (box_camera) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[1.695162] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.699773] (box_camera) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.701415] (-) TimerEvent: {}
+[1.713380] (box_camera) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[1.745354] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.747123] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.747592] (box_camera) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[1.747849] (box_camera) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.748608] (box_camera) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.749918] (box_camera) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.759864] (box_camera) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[1.760322] (box_camera) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[1.762098] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[1.762538] (box_camera) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[1.762882] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.765446] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[1.765857] (box_camera) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[1.801513] (-) TimerEvent: {}
+[1.837230] (box_camera) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[1.844787] (box_camera) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.856527] (box_camera) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.886321] (box_camera) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.891407] (box_camera) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.901633] (-) TimerEvent: {}
+[1.902754] (box_camera) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.935619] (box_camera) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.936059] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.936452] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.936905] (box_camera) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.940730] (box_camera) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[1.945747] (box_camera) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[1.946048] (box_camera) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[1.957269] (box_camera) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[1.990554] (box_camera) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)\n'}
+[2.001748] (-) TimerEvent: {}
+[2.044948] (box_camera) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.046300] (box_camera) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.046490] (box_camera) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.101867] (-) TimerEvent: {}
+[2.202174] (-) TimerEvent: {}
+[2.302479] (-) TimerEvent: {}
+[2.402788] (-) TimerEvent: {}
+[2.503084] (-) TimerEvent: {}
+[2.554147] (box_camera) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.568376] (box_camera) StdoutLine: {'line': b'-- Generating done\n'}
+[2.570821] (box_camera) StdoutLine: {'line': b'-- Build files have been written to: /home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera\n'}
+[2.582973] (box_camera) CommandEnded: {'returncode': 0}
+[2.583684] (box_camera) JobProgress: {'identifier': 'box_camera', 'progress': 'build'}
+[2.584398] (box_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera', '--', '-j4', '-l4'], 'cwd': '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'dev'), ('GIO_MODULE_DIR', '/home/dev/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', '/snap/code/163/usr'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', 'x11'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dev'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', '/snap/code/163/usr/lib/locale:/snap/code/163/usr/lib/locale'), ('OLDPWD', '/home/dev/gazebo-tutorials/gazebo-drone-ros/src/camera_msgs'), ('TERM_PROGRAM_VERSION', '1.91.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0:/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0:/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NVM_BIN', '/home/dev/.nvm/versions/node/v20.15.0/bin'), ('NVM_INC', '/home/dev/.nvm/versions/node/v20.15.0/include/node'), ('GTK_IM_MODULE_FILE', '/home/dev/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', '/home/dev/snap/code/163/.local/share/glib-2.0/schemas'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/163/usr/share/code/code'), ('MANAGERPID', '826'), ('SYSTEMD_EXEC_PID', '967'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3806'), ('NVM_DIR', '/home/dev/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dev'), ('JOURNAL_STREAM', '8:28556'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'dev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/dev/workspaces/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/dev/.nvm/versions/node/v20.15.0/bin:/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ares:@/tmp/.ICE-unix/931,unix/ares:/tmp/.ICE-unix/931'), ('GTK_EXE_PREFIX', '/snap/code/163/usr'), ('INVOCATION_ID', '0f2d1487ae4d47e2895911bac89c54a5'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/163/usr/lib/locale:/snap/code/163/usr/lib/locale:/snap/code/163/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', '/home/dev/snap/code/common/.cache/gio-modules'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ATHCQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-981371030b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/dev/snap/code/163/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '45'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'Unity'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', '/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0:/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', '/home/dev/snap/code/common/.cache/immodules/immodules.cache'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.603198] (-) TimerEvent: {}
+[2.634241] (box_camera) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o\x1b[0m\n'}
+[2.703309] (-) TimerEvent: {}
+[2.803687] (-) TimerEvent: {}
+[2.904005] (-) TimerEvent: {}
+[3.004338] (-) TimerEvent: {}
+[3.104656] (-) TimerEvent: {}
+[3.204942] (-) TimerEvent: {}
+[3.305282] (-) TimerEvent: {}
+[3.405582] (-) TimerEvent: {}
+[3.506013] (-) TimerEvent: {}
+[3.606343] (-) TimerEvent: {}
+[3.706597] (-) TimerEvent: {}
+[3.806889] (-) TimerEvent: {}
+[3.907220] (-) TimerEvent: {}
+[4.007529] (-) TimerEvent: {}
+[4.107848] (-) TimerEvent: {}
+[4.208181] (-) TimerEvent: {}
+[4.308518] (-) TimerEvent: {}
+[4.408859] (-) TimerEvent: {}
+[4.509151] (-) TimerEvent: {}
+[4.609481] (-) TimerEvent: {}
+[4.709763] (-) TimerEvent: {}
+[4.810078] (-) TimerEvent: {}
+[4.910400] (-) TimerEvent: {}
+[5.010671] (-) TimerEvent: {}
+[5.110942] (-) TimerEvent: {}
+[5.211225] (-) TimerEvent: {}
+[5.311539] (-) TimerEvent: {}
+[5.411877] (-) TimerEvent: {}
+[5.512241] (-) TimerEvent: {}
+[5.612538] (-) TimerEvent: {}
+[5.712850] (-) TimerEvent: {}
+[5.813122] (-) TimerEvent: {}
+[5.913427] (-) TimerEvent: {}
+[6.013730] (-) TimerEvent: {}
+[6.114048] (-) TimerEvent: {}
+[6.214357] (-) TimerEvent: {}
+[6.314652] (-) TimerEvent: {}
+[6.414968] (-) TimerEvent: {}
+[6.515321] (-) TimerEvent: {}
+[6.615649] (-) TimerEvent: {}
+[6.715911] (-) TimerEvent: {}
+[6.816239] (-) TimerEvent: {}
+[6.916591] (-) TimerEvent: {}
+[7.016932] (-) TimerEvent: {}
+[7.117270] (-) TimerEvent: {}
+[7.217590] (-) TimerEvent: {}
+[7.317953] (-) TimerEvent: {}
+[7.418288] (-) TimerEvent: {}
+[7.518606] (-) TimerEvent: {}
+[7.618948] (-) TimerEvent: {}
+[7.719242] (-) TimerEvent: {}
+[7.819593] (-) TimerEvent: {}
+[7.919913] (-) TimerEvent: {}
+[8.020245] (-) TimerEvent: {}
+[8.120739] (-) TimerEvent: {}
+[8.221075] (-) TimerEvent: {}
+[8.321411] (-) TimerEvent: {}
+[8.421733] (-) TimerEvent: {}
+[8.522059] (-) TimerEvent: {}
+[8.622392] (-) TimerEvent: {}
+[8.722739] (-) TimerEvent: {}
+[8.823091] (-) TimerEvent: {}
+[8.923449] (-) TimerEvent: {}
+[9.023762] (-) TimerEvent: {}
+[9.124255] (-) TimerEvent: {}
+[9.224600] (-) TimerEvent: {}
+[9.324878] (-) TimerEvent: {}
+[9.425168] (-) TimerEvent: {}
+[9.525553] (-) TimerEvent: {}
+[9.625905] (-) TimerEvent: {}
+[9.726227] (-) TimerEvent: {}
+[9.826547] (-) TimerEvent: {}
+[9.926869] (-) TimerEvent: {}
+[10.027195] (-) TimerEvent: {}
+[10.127517] (-) TimerEvent: {}
+[10.227855] (-) TimerEvent: {}
+[10.328330] (-) TimerEvent: {}
+[10.428658] (-) TimerEvent: {}
+[10.528986] (-) TimerEvent: {}
+[10.629311] (-) TimerEvent: {}
+[10.729633] (-) TimerEvent: {}
+[10.829954] (-) TimerEvent: {}
+[10.930276] (-) TimerEvent: {}
+[11.030758] (-) TimerEvent: {}
+[11.131078] (-) TimerEvent: {}
+[11.231438] (-) TimerEvent: {}
+[11.331754] (-) TimerEvent: {}
+[11.432053] (-) TimerEvent: {}
+[11.532336] (-) TimerEvent: {}
+[11.632666] (-) TimerEvent: {}
+[11.733025] (-) TimerEvent: {}
+[11.833398] (-) TimerEvent: {}
+[11.933755] (-) TimerEvent: {}
+[12.034114] (-) TimerEvent: {}
+[12.134489] (-) TimerEvent: {}
+[12.234851] (-) TimerEvent: {}
+[12.335210] (-) TimerEvent: {}
+[12.435525] (-) TimerEvent: {}
+[12.530369] (box_camera) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libbox_camera_plugin.so\x1b[0m\n'}
+[12.535613] (-) TimerEvent: {}
+[12.635930] (-) TimerEvent: {}
+[12.736271] (-) TimerEvent: {}
+[12.778949] (box_camera) StdoutLine: {'line': b'[100%] Built target box_camera_plugin\n'}
+[12.788262] (box_camera) CommandEnded: {'returncode': 0}
+[12.810276] (box_camera) JobProgress: {'identifier': 'box_camera', 'progress': 'install'}
+[12.817876] (box_camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera'], 'cwd': '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'dev'), ('GIO_MODULE_DIR', '/home/dev/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', '/snap/code/163/usr'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', 'x11'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dev'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', '/snap/code/163/usr/lib/locale:/snap/code/163/usr/lib/locale'), ('OLDPWD', '/home/dev/gazebo-tutorials/gazebo-drone-ros/src/camera_msgs'), ('TERM_PROGRAM_VERSION', '1.91.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0:/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0:/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NVM_BIN', '/home/dev/.nvm/versions/node/v20.15.0/bin'), ('NVM_INC', '/home/dev/.nvm/versions/node/v20.15.0/include/node'), ('GTK_IM_MODULE_FILE', '/home/dev/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', '/home/dev/snap/code/163/.local/share/glib-2.0/schemas'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/163/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/163/usr/share/code/code'), ('MANAGERPID', '826'), ('SYSTEMD_EXEC_PID', '967'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3806'), ('NVM_DIR', '/home/dev/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dev'), ('JOURNAL_STREAM', '8:28556'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'dev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/dev/workspaces/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/dev/.nvm/versions/node/v20.15.0/bin:/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ares:@/tmp/.ICE-unix/931,unix/ares:/tmp/.ICE-unix/931'), ('GTK_EXE_PREFIX', '/snap/code/163/usr'), ('INVOCATION_ID', '0f2d1487ae4d47e2895911bac89c54a5'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/163/usr/lib/locale:/snap/code/163/usr/lib/locale:/snap/code/163/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', '/home/dev/snap/code/common/.cache/gio-modules'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ATHCQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-981371030b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/dev/snap/code/163/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '45'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'Unity'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', '/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0:/snap/code/163/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', '/home/dev/snap/code/common/.cache/immodules/immodules.cache'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/home/dev/snap/code/163/.local/share:/home/dev/snap/code/163:/snap/code/163/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[12.824904] (box_camera) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.825115] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera//src\n'}
+[12.825406] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera//src/boxCameraPlugin.cpp\n'}
+[12.825546] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/environment/library_path.sh\n'}
+[12.825707] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/environment/library_path.dsv\n'}
+[12.825926] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/lib/libbox_camera_plugin.so\n'}
+[12.827227] (box_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/lib/libbox_camera_plugin.so" to ""\n'}
+[12.827394] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/ament_index/resource_index/package_run_dependencies/box_camera\n'}
+[12.827518] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/ament_index/resource_index/parent_prefix_path/box_camera\n'}
+[12.827642] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/environment/ament_prefix_path.sh\n'}
+[12.827777] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/environment/ament_prefix_path.dsv\n'}
+[12.827939] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/environment/path.sh\n'}
+[12.828079] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/environment/path.dsv\n'}
+[12.828222] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/local_setup.bash\n'}
+[12.828367] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/local_setup.sh\n'}
+[12.828509] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/local_setup.zsh\n'}
+[12.828629] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/local_setup.dsv\n'}
+[12.828744] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/package.dsv\n'}
+[12.828918] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/ament_index/resource_index/packages/box_camera\n'}
+[12.829068] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.829192] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/cmake/box_cameraConfig.cmake\n'}
+[12.829603] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/cmake/box_cameraConfig-version.cmake\n'}
+[12.829737] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/share/box_camera/package.xml\n'}
+[12.829823] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/include\n'}
+[12.829908] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/include/boxCamera\n'}
+[12.829993] (box_camera) StdoutLine: {'line': b'-- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/box_camera/include/boxCamera/boxCameraPlugin.hpp\n'}
+[12.831521] (box_camera) CommandEnded: {'returncode': 0}
+[12.836388] (-) TimerEvent: {}
+[12.936678] (-) TimerEvent: {}
+[13.007738] (box_camera) JobEnded: {'identifier': 'box_camera', 'rc': 0}
+[13.008432] (-) EventReactorShutdown: {}

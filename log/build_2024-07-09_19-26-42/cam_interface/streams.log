@@ -1,0 +1,217 @@
+[0.065s] Invoking command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dev/gazebo-tutorials/gazebo-drone-ros/src/cam_interface -DCMAKE_INSTALL_PREFIX=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface
+[0.077s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.213s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.237s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.239s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.244s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.253s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.270s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.285s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.523s] -- Found ament_cmake_cppcheck: 0.12.10 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[0.525s] -- Found ament_cmake_cpplint: 0.12.10 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[0.527s] -- Found ament_cmake_uncrustify: 0.12.10 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[0.530s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.824s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.939s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.962s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.964s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.988s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.988s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.988s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.988s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.009s] -- Found PythonExtra: .so  
+[1.043s] -- Found ament_cmake_flake8: 0.12.10 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[1.045s] -- Found ament_cmake_pep257: 0.12.10 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[1.054s] -- Configuring done
+[1.079s] -- Generating done
+[1.081s] -- Build files have been written to: /home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface
+[1.087s] Invoked command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dev/gazebo-tutorials/gazebo-drone-ros/src/cam_interface -DCMAKE_INSTALL_PREFIX=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface
+[1.089s] Invoking command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface -- -j4 -l4
+[1.125s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.140s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.152s] [  6%] Built target ament_cmake_python_copy_cam_interface
+[1.434s] [  9%] [32mBuilding C object CMakeFiles/cam_interface__rosidl_generator_c.dir/rosidl_generator_c/cam_interface/msg/detail/pixel__functions.c.o[0m
+[1.494s] [ 12%] [32m[1mLinking C shared library libcam_interface__rosidl_generator_c.so[0m
+[1.504s] [ 12%] Built target cam_interface__cpp
+[1.520s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.525s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.553s] [ 19%] Built target cam_interface__rosidl_generator_c
+[1.568s] [ 22%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.592s] running egg_info
+[1.593s] creating cam_interface.egg-info
+[1.594s] writing cam_interface.egg-info/PKG-INFO
+[1.596s] writing dependency_links to cam_interface.egg-info/dependency_links.txt
+[1.598s] writing top-level names to cam_interface.egg-info/top_level.txt
+[1.598s] writing manifest file 'cam_interface.egg-info/SOURCES.txt'
+[1.602s] reading manifest file 'cam_interface.egg-info/SOURCES.txt'
+[1.603s] writing manifest file 'cam_interface.egg-info/SOURCES.txt'
+[1.660s] [ 22%] Built target ament_cmake_python_build_cam_interface_egg
+[1.675s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.930s] [ 29%] [32mBuilding CXX object CMakeFiles/cam_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cam_interface/msg/pixel__type_support.cpp.o[0m
+[1.958s] [ 32%] [32mBuilding CXX object CMakeFiles/cam_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cam_interface/msg/detail/dds_fastrtps/pixel__type_support.cpp.o[0m
+[1.975s] [ 35%] [32mBuilding CXX object CMakeFiles/cam_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cam_interface/msg/detail/pixel__type_support.cpp.o[0m
+[2.106s] [ 38%] [32mBuilding CXX object CMakeFiles/cam_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cam_interface/msg/detail/pixel__type_support_c.cpp.o[0m
+[2.325s] [ 41%] [32m[1mLinking CXX shared library libcam_interface__rosidl_typesupport_cpp.so[0m
+[2.383s] [ 41%] Built target cam_interface__rosidl_typesupport_cpp
+[2.397s] [ 45%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.607s] [ 48%] [32m[1mLinking CXX shared library libcam_interface__rosidl_typesupport_introspection_cpp.so[0m
+[2.652s] [ 51%] [32m[1mLinking CXX shared library libcam_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.694s] [ 54%] [32m[1mLinking CXX shared library libcam_interface__rosidl_typesupport_fastrtps_c.so[0m
+[2.748s] [ 54%] Built target cam_interface__rosidl_typesupport_introspection_cpp
+[2.769s] [ 58%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.789s] [ 58%] Built target cam_interface__rosidl_typesupport_fastrtps_cpp
+[2.827s] [ 58%] Built target cam_interface__rosidl_typesupport_fastrtps_c
+[2.827s] [ 61%] [32mBuilding C object CMakeFiles/cam_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cam_interface/msg/detail/pixel__type_support.c.o[0m
+[2.862s] [ 64%] [32m[1mLinking C shared library libcam_interface__rosidl_typesupport_introspection_c.so[0m
+[2.889s] [ 64%] Built target cam_interface__rosidl_typesupport_introspection_c
+[3.006s] [ 67%] [32mBuilding CXX object CMakeFiles/cam_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/cam_interface/msg/pixel__type_support.cpp.o[0m
+[3.034s] [ 70%] [32m[1mLinking CXX shared library libcam_interface__rosidl_typesupport_c.so[0m
+[3.069s] [ 70%] Built target cam_interface__rosidl_typesupport_c
+[3.086s] [ 70%] Built target cam_interface
+[3.103s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.393s] [ 74%] Built target cam_interface__py
+[3.410s] [ 77%] [32mBuilding C object CMakeFiles/cam_interface__rosidl_generator_py.dir/rosidl_generator_py/cam_interface/msg/_pixel_s.c.o[0m
+[3.528s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/cam_interface/libcam_interface__rosidl_generator_py.so[0m
+[3.564s] [ 80%] Built target cam_interface__rosidl_generator_py
+[3.584s] [ 83%] [32mBuilding C object CMakeFiles/cam_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cam_interface/_cam_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.586s] [ 87%] [32mBuilding C object CMakeFiles/cam_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cam_interface/_cam_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[3.588s] [ 90%] [32mBuilding C object CMakeFiles/cam_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/cam_interface/_cam_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.683s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/cam_interface/cam_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.718s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/cam_interface/cam_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.724s] [ 96%] Built target cam_interface__rosidl_typesupport_introspection_c__pyext
+[3.725s] [100%] [32m[1mLinking C shared library rosidl_generator_py/cam_interface/cam_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.754s] [100%] Built target cam_interface__rosidl_typesupport_c__pyext
+[3.760s] [100%] Built target cam_interface__rosidl_typesupport_fastrtps_c__pyext
+[3.770s] Invoked command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface -- -j4 -l4
+[3.826s] Invoking command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface
+[3.834s] -- Install configuration: ""
+[3.834s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/ament_index/resource_index/rosidl_interfaces/cam_interface
+[3.834s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface
+[3.834s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg
+[3.834s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/rosidl_generator_c__visibility_control.h
+[3.835s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/pixel.h
+[3.835s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail
+[3.835s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__functions.c
+[3.835s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__type_support.h
+[3.835s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__struct.h
+[3.835s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__functions.h
+[3.836s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/library_path.sh
+[3.836s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/library_path.dsv
+[3.837s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_generator_c.so
+[3.837s] -- Set runtime path of "/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_generator_c.so" to ""
+[3.837s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface
+[3.837s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg
+[3.837s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.837s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail
+[3.837s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__rosidl_typesupport_fastrtps_c.h
+[3.837s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_fastrtps_c.so
+[3.837s] -- Set runtime path of "/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[3.837s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface
+[3.838s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg
+[3.838s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail
+[3.838s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__traits.hpp
+[3.838s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__builder.hpp
+[3.838s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__struct.hpp
+[3.838s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/pixel.hpp
+[3.838s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface
+[3.838s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg
+[3.838s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.838s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail
+[3.839s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/dds_fastrtps
+[3.839s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__rosidl_typesupport_fastrtps_cpp.hpp
+[3.839s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_fastrtps_cpp.so
+[3.839s] -- Set runtime path of "/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.839s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface
+[3.839s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg
+[3.839s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.839s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail
+[3.839s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__type_support.c
+[3.839s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__rosidl_typesupport_introspection_c.h
+[3.840s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_introspection_c.so
+[3.840s] -- Set runtime path of "/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_introspection_c.so" to ""
+[3.840s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_c.so
+[3.840s] -- Set runtime path of "/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_c.so" to ""
+[3.840s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface
+[3.840s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg
+[3.840s] -- Up-to-date: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail
+[3.840s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__type_support.cpp
+[3.840s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__rosidl_typesupport_introspection_cpp.hpp
+[3.840s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_introspection_cpp.so
+[3.841s] -- Set runtime path of "/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[3.841s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_cpp.so
+[3.841s] -- Set runtime path of "/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_typesupport_cpp.so" to ""
+[3.841s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/pythonpath.sh
+[3.841s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/pythonpath.dsv
+[3.841s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface-0.0.0-py3.10.egg-info
+[3.842s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface-0.0.0-py3.10.egg-info/top_level.txt
+[3.842s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.842s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[3.842s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.842s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface
+[3.842s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/_cam_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.842s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/_cam_interface_s.ep.rosidl_typesupport_c.c
+[3.842s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/__init__.py
+[3.843s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/libcam_interface__rosidl_generator_py.so
+[3.843s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.843s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.843s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.843s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/msg
+[3.843s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/msg/_pixel_s.c
+[3.843s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/msg/__init__.py
+[3.843s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/msg/_pixel.py
+[3.844s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/_cam_interface_s.ep.rosidl_typesupport_introspection_c.c
+[3.875s] Listing '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface'...
+[3.875s] Compiling '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/__init__.py'...
+[3.875s] Listing '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/msg'...
+[3.875s] Compiling '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/msg/__init__.py'...
+[3.875s] Compiling '/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/msg/_pixel.py'...
+[3.879s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.880s] -- Set runtime path of "/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.880s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.880s] -- Set runtime path of "/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.880s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.880s] -- Set runtime path of "/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages/cam_interface/cam_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.881s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_generator_py.so
+[3.881s] -- Set runtime path of "/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib/libcam_interface__rosidl_generator_py.so" to ""
+[3.881s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/msg/Pixel.idl
+[3.881s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/msg/Pixel.msg
+[3.881s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/ament_index/resource_index/package_run_dependencies/cam_interface
+[3.881s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/ament_index/resource_index/parent_prefix_path/cam_interface
+[3.882s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/ament_prefix_path.sh
+[3.882s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/ament_prefix_path.dsv
+[3.882s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/path.sh
+[3.882s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/environment/path.dsv
+[3.882s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/local_setup.bash
+[3.882s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/local_setup.sh
+[3.883s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/local_setup.zsh
+[3.883s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/local_setup.dsv
+[3.883s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/package.dsv
+[3.883s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/ament_index/resource_index/packages/cam_interface
+[3.883s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_generator_cExport.cmake
+[3.884s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_generator_cExport-noconfig.cmake
+[3.884s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[3.884s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.884s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_generator_cppExport.cmake
+[3.884s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.884s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.884s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_introspection_cExport.cmake
+[3.885s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.885s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_cExport.cmake
+[3.885s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_cExport-noconfig.cmake
+[3.885s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_introspection_cppExport.cmake
+[3.885s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.885s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_cppExport.cmake
+[3.885s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[3.886s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_generator_pyExport.cmake
+[3.886s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/export_cam_interface__rosidl_generator_pyExport-noconfig.cmake
+[3.886s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/rosidl_cmake-extras.cmake
+[3.886s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.886s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.886s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[3.886s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/ament_cmake_export_targets-extras.cmake
+[3.886s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.887s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.887s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interfaceConfig.cmake
+[3.887s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/cmake/cam_interfaceConfig-version.cmake
+[3.887s] -- Installing: /home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/share/cam_interface/package.xml
+[3.889s] Invoked command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dev/gazebo-tutorials/gazebo-drone-ros/build/cam_interface

@@ -1,0 +1,14 @@
+[0.071s] Invoking command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera': AMENT_PREFIX_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera -- -j4 -l4
+[0.120s] [35m[1mConsolidate compiler generated dependencies of target box_camera_plugin[0m
+[0.168s] [ 50%] [32mBuilding CXX object CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o[0m
+[10.061s] [01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:30:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kros_node[m[K’ does not name a type; did you mean ‘[01m[Krmw_node_t[m[K’?
+[10.061s]    30 |             [01;31m[Kros_node[m[K = std::make_shared<rclcpp::Node>("camera_plugin_node");
+[10.061s]       |             [01;31m[K^~~~~~~~[m[K
+[10.061s]       |             [32m[Krmw_node_t[m[K
+[10.068s] [01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:31:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ does not name a type
+[10.068s]    31 |             [01;31m[Kpublisher[m[K = this->ros_node->create_publisher<cam_interface::Pixel>("camera_topic", 10);
+[10.068s]       |             [01;31m[K^~~~~~~~~[m[K
+[11.729s] gmake[2]: *** [CMakeFiles/box_camera_plugin.dir/build.make:76: CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o] Error 1
+[11.730s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/box_camera_plugin.dir/all] Error 2
+[11.730s] gmake: *** [Makefile:146: all] Error 2
+[11.732s] Invoked command in '/home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera' returned '2': AMENT_PREFIX_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dev/gazebo-tutorials/gazebo-drone-ros/build/box_camera -- -j4 -l4

@@ -1,0 +1,80 @@
+[35m[1mConsolidate compiler generated dependencies of target box_camera_plugin[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o[0m
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:18:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcam_publisher[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   18 |             [01;31m[Kcam_publisher[m[K = this->create_publisher<OffboardControlMode>("/sai_custom_plugin/data", 10);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+      |             [32m[Krmw_publisher_t[m[K
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:29:31:[m[K [01;31m[Kerror: [m[K‘[01m[KPixel[m[K’ was not declared in this scope; did you mean ‘[01m[Kcam_interface::msg::Pixel[m[K’?
+   29 |             rclcpp::Publisher<[01;31m[KPixel[m[K>::SharedPtr cam_publisher;
+      |                               [01;31m[K^~~~~[m[K
+      |                               [32m[Kcam_interface::msg::Pixel[m[K
+In file included from [01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/pixel.hpp:7[m[K,
+                 from [01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:8[m[K:
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/install/cam_interface/include/cam_interface/cam_interface/msg/detail/pixel__struct.hpp:137:7:[m[K [01;36m[Knote: [m[K‘[01m[Kcam_interface::msg::Pixel[m[K’ declared here
+  137 | using [01;36m[KPixel[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:29:36:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   29 |             rclcpp::Publisher<Pixel[01;31m[K>[m[K::SharedPtr cam_publisher;
+      |                                    [01;31m[K^[m[K
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:29:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   29 |             rclcpp::Publisher<Pixel>::[01;31m[KSharedPtr[m[K cam_publisher;
+      |                                       [01;31m[K^~~~~~~~~[m[K
+      |                                                [32m[K;[m[K
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:29:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kcam_publisher[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   29 |             rclcpp::Publisher<Pixel>::SharedPtr [01;31m[Kcam_publisher[m[K;
+      |                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                 [32m[Krmw_publisher_t[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/gazebo_ros/node.hpp:18[m[K,
+                 from [01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:2[m[K:
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:[m[K In constructor ‘[01m[Kgazebo::BoxCameraPlugin::BoxCameraPlugin()[m[K’:
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:37:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass gazebo::BoxCameraPlugin[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+   37 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Ros2 Logger Done");
+      |                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:37:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass gazebo::BoxCameraPlugin[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:37:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   37 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Ros2 Logger Done");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:37:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   37 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Ros2 Logger Done");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:37:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   37 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Ros2 Logger Done");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:37:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   37 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Ros2 Logger Done");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:37:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   37 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Ros2 Logger Done");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/gazebo_ros/node.hpp:18[m[K,
+                 from [01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:2[m[K:
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:37:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass gazebo::BoxCameraPlugin[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+   37 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Ros2 Logger Done");
+      |                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/dev/gazebo-tutorials/gazebo-drone-ros/src/box_camera/src/boxCameraPlugin.cpp:37:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass gazebo::BoxCameraPlugin[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+   37 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Ros2 Logger Done");
+      |                           [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/box_camera_plugin.dir/build.make:76: CMakeFiles/box_camera_plugin.dir/src/boxCameraPlugin.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/box_camera_plugin.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
